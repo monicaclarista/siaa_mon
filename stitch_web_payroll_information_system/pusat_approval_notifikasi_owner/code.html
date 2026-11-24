@@ -1,0 +1,683 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#3c475a","surface-bright":"#f8f9ff","on-background":"#0b1c30","surface-container-high":"#dce9ff","on-secondary-fixed":"#00174b","on-secondary-fixed-variant":"#003ea8","on-error-container":"#93000a","secondary-fixed":"#dbe1ff","outline-variant":"#c5c6cd","on-tertiary-fixed":"#001f26","inverse-primary":"#bcc7de","surface-tint":"#545f73","surface-container-highest":"#d3e4fe","tertiary":"#00171c","inverse-on-surface":"#eaf1ff","tertiary-fixed":"#acedff","primary-fixed":"#d8e3fb","on-tertiary-container":"#009db7","surface-container-low":"#eff4ff","on-tertiary":"#ffffff","on-primary-container":"#8590a6","primary":"#091426","error-container":"#ffdad6","error":"#ba1a1a","surface-dim":"#cbdbf5","tertiary-fixed-dim":"#4cd7f6","on-error":"#ffffff","secondary":"#0051d5","inverse-surface":"#213145","background":"#f8f9ff","secondary-container":"#316bf3","on-secondary":"#ffffff","primary-fixed-dim":"#bcc7de","surface-variant":"#d3e4fe","on-tertiary-fixed-variant":"#004e5c","outline":"#75777d","on-surface":"#0b1c30","on-primary-fixed":"#111c2d","on-surface-variant":"#45474c","surface-container":"#e5eeff","on-secondary-container":"#fefcff","tertiary-container":"#002d36","primary-container":"#1e293b","secondary-fixed-dim":"#b4c5ff","on-primary":"#ffffff","surface":"#f8f9ff","surface-container-lowest":"#ffffff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"0.875rem","space-xl":"2rem",margin:"1.75rem","space-sm":"0.5rem","space-lg":"1.25rem","space-xs":"0.25rem",gutter:"1.25rem"},fontFamily:{"headline-lg":["Inter"],"body-lg":["Inter"],"label-numeric-lg":["JetBrains Mono"],"headline-md":["Inter"],"label-caps":["Inter"],"label-numeric-sm":["JetBrains Mono"],"body-md":["Inter"],"headline-sm":["Inter"],"headline-xl":["Inter"],"body-sm":["Inter"],"label-numeric-md":["JetBrains Mono"]},fontSize:{"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.015em",fontWeight:"600"}],"body-lg":["1rem",{lineHeight:"1.5rem",fontWeight:"400"}],"label-numeric-lg":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-md":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.01em",fontWeight:"600"}],"label-caps":["0.6875rem",{lineHeight:"1rem",letterSpacing:"0.05em",fontWeight:"700"}],"label-numeric-sm":["0.75rem",{lineHeight:"1rem",fontWeight:"500"}],"body-md":["0.875rem",{lineHeight:"1.25rem",fontWeight:"400"}],"headline-sm":["1.125rem",{lineHeight:"1.5rem",fontWeight:"600"}],"headline-xl":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["0.75rem",{lineHeight:"1rem",fontWeight:"400"}],"label-numeric-md":["0.875rem",{lineHeight:"1.25rem",fontWeight:"500"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate leading-tight">JAVA BATIK</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Owner Executive Suite</span></div></div><div class="px-space-md py-space-sm overflow-y-auto max-h-[calc(100vh-8.5rem)]"><div class="mb-space-md"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">UTAMA</div><nav class="mt-space-xs flex flex-col gap-space-xs"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard-payroll" href="#"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">bar_chart</span><span class="font-body-md text-body-md">Dashboard Payroll</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard-expenditure" href="#"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">trending_up</span><span class="font-body-md text-body-md">Dashboard Expenditure</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm bg-secondary/15 text-secondary font-bold rounded-lg shadow-sm" data-path="pusat-approval-notifikasi" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0 text-secondary">verified_user</span><span class="font-body-md text-body-md">Pusat Approval</span></div><span class="font-label-numeric-sm text-label-numeric-sm px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-semibold">3</span></a></nav></div><div class="mb-space-md"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">PAYROLL HCM</div><nav class="mt-space-xs flex flex-col gap-space-xs"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="data-gaji" href="#"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">badge</span><span class="font-body-md text-body-md">Data Gaji</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="pembayaran-gaji-karyawan" href="#"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">payments</span><span class="font-body-md text-body-md">Pembayaran Gaji</span></a></nav></div><div class="mb-space-md"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">PEMBUKUAN</div><nav class="mt-space-xs flex flex-col gap-space-xs"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="pengeluaran" href="#"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">receipt_long</span><span class="font-body-md text-body-md">Pengeluaran</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="kas" href="#"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">account_balance</span><span class="font-body-md text-body-md">Kas</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="jurnal-umum" href="#"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">menu_book</span><span class="font-body-md text-body-md">Jurnal Umum</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="buku-besar" href="#"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">auto_stories</span><span class="font-body-md text-body-md">Buku Besar</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="neraca-saldo" href="#"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">balance</span><span class="font-body-md text-body-md">Neraca Saldo</span></a></nav></div></div></div><div class="p-space-md bg-surface-container-low"></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">domain</span><select class="bg-transparent font-body-sm text-body-sm text-on-surface outline-none cursor-pointer pr-space-xs font-medium"><option selected="" value="pusat">Kantor Pusat - Malang</option><option value="sby">Cabang Surabaya</option><option value="jkt">Cabang Jakarta</option></select></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">calendar_today</span><select class="bg-transparent font-body-sm text-body-sm text-on-surface outline-none cursor-pointer pr-space-xs font-semibold"><option selected="" value="2026">FY 2026</option><option value="2025">FY 2025</option></select></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"></div><button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Bantuan &amp; Dokumentasi" type="button"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-body-sm text-body-sm text-on-surface font-semibold leading-tight">H. Sudirman</span><span class="font-label-caps text-label-caps text-on-surface-variant">Owner / Direktur Utama</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/ALJJyrAuM75pskS5tfRamhcANsB66VTDVP8-RD2x_r4rM1z3MyA8Gle9pUmTIHszEk6bNRouxiw6Vky2nedAurKKfq9ZHS_1LqxMWzDPpY0HTUj25VmrjQZIuhOhq5QIB0tMvL89JMeN-eAh3RRz3ZFlzwNfg2XS5e9NJVf1qmO_EBUjiNHRIaPo0DFFT_5s9WZvuEFtS4h_3WJrHO2yLhA5-hxh0P6RTYxsZQxw9TWkwnKiqYXK-D7L7ImI3OOw"></div></div></header><main class="w-full flex-1 pt-16 px-gutter pb-space-xl bg-surface"><div class="flex flex-col w-full">
+<!-- Top Executive Header Banner -->
+<div class="relative w-full rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low text-on-surface p-space-lg shadow-sm mb-space-lg overflow-hidden border-0"><div class="absolute -right-12 -top-12 w-80 h-80 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none"></div><div class="absolute right-36 bottom-0 w-48 h-48 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div><div class="relative z-10 flex flex-col xl:flex-row xl:items-center xl:justify-between gap-space-md"><div class="flex items-start gap-space-md"><div class="flex flex-col"><div class="flex items-center gap-space-sm mb-1"></div><h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">Pusat Approval &amp; Notifikasi Otorisasi Owner</h1></div></div></div></div>
+<!-- Filter & Module Control Bar -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md mb-space-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Status Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 lg:pb-0" id="approval-status-tabs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-headline-sm text-body-md font-semibold whitespace-nowrap transition-all shadow-sm" type="button">
+        Semua Pengajuan <span class="ml-1.5 px-1.5 py-0.5 rounded text-label-numeric-sm font-semibold bg-surface-container text-on-surface-variant">8</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-error-container text-on-error-container font-headline-sm text-body-md font-bold whitespace-nowrap flex items-center gap-space-xs transition-all shadow-sm" type="button">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+        Menunggu Approval Owner <span class="ml-1 px-1.5 py-0.5 rounded-full bg-error text-on-error text-label-numeric-sm font-bold">3</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-body-md font-medium whitespace-nowrap transition-all" type="button">
+        Telah Disetujui <span class="ml-1.5 px-1.5 py-0.5 rounded text-label-numeric-sm font-semibold bg-surface-container text-on-surface-variant">4</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-body-md font-medium whitespace-nowrap transition-all" type="button">
+        Ditolak / Dikembalikan <span class="ml-1.5 px-1.5 py-0.5 rounded text-label-numeric-sm font-semibold bg-surface-container text-on-surface-variant">1</span>
+</button>
+</div>
+<!-- Right Controls: Module Filter & Fiscal Year -->
+<div class="flex items-center gap-space-sm flex-wrap shrink-0">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-2 rounded-lg text-on-surface shadow-inner">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">apps</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Modul:</span>
+<select class="bg-transparent font-body-sm text-body-sm text-on-surface outline-none cursor-pointer font-semibold pr-1">
+<option selected="" value="all">Semua Sistem</option>
+<option value="payroll">Payroll HCM</option>
+<option value="pembukuan">Pembukuan / Kas Operasional</option>
+<option value="master">Master Skema Remunerasi</option>
+</select>
+</div>
+
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm font-medium transition-colors shadow-sm" title="Refresh Pengajuan" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Perbarui</span>
+</button>
+</div>
+</div>
+<!-- SECTION 1: 3 URGENT APPROVAL ACTION CARDS -->
+<div class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-error animate-ping"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Permintaan Approval Mendesak Siap Ditandatangani</h2>
+</div>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">Batas SLA: Hari ini pukul 17:00 WIB</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- KARTU 1: BATCH PAYROLL BULAN OKTOBER 2026 -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-md p-space-lg hover:shadow-xl transition-all duration-200 relative group overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary"></div>
+<div>
+<!-- Card Header Badges -->
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-[14px]">receipt_long</span> Payroll HCM
+            </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-caps text-label-caps uppercase font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Menunggu Approval Owner
+            </span>
+</div>
+<!-- Title & Submitter -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug mb-space-xs group-hover:text-secondary transition-colors">
+            Persetujuan Batch Pembayaran Gaji Karyawan Bulan Oktober 2026
+          </h3>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-md">
+<span class="material-symbols-outlined text-[16px]">person</span>
+<span>Diajukan oleh: <strong class="text-on-surface">Ratna Sari, S.Psi</strong> (HR Manager)</span>
+</div>
+<!-- Highlight Amount Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Total Beban Payroll Bersih</span>
+<span class="font-label-caps text-label-caps text-secondary font-bold">Batch ID: #PAY-2026-10-B1</span>
+</div>
+<div class="font-label-numeric-lg text-label-numeric-lg text-primary font-bold tracking-tight">
+              Rp 48.067.625
+            </div>
+<div class="grid grid-cols-2 gap-space-xs mt-space-sm pt-space-xs border-t-0 bg-surface-container-lowest/60 p-space-xs rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Pegawai Tervalidasi</span>
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">8 Karyawan</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Titipan PPh 21 Terpotong</span>
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">Rp 3.840.000</span>
+</div>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Rekonsiliasi Absensi: <strong class="text-on-surface">0 Perselisihan</strong> (100% Cocok)</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full h-10 px-space-md rounded-lg bg-secondary hover:bg-secondary-container text-on-secondary font-headline-sm text-body-md font-bold flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]" onclick="openApprovalModal('payroll')" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Setujui Pembayaran Gaji</span>
+</button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="h-9 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm font-semibold flex items-center justify-center gap-1 transition-colors" onclick="toggleDetailDrawer('drawer-payroll')" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Rincian Gaji</span>
+</button>
+<button class="h-9 px-space-sm rounded-lg bg-surface-container-low hover:bg-error-container hover:text-on-error-container text-on-surface-variant font-body-sm font-semibold flex items-center justify-center gap-1 transition-colors" onclick="rejectPrompt('Batch Pembayaran Gaji Oktober 2026')" type="button">
+<span class="material-symbols-outlined text-[16px]">undo</span>
+<span>Tolak / Revisi</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KARTU 2: PENGESAHAN SKEMA GAJI & TUNJANGAN POKOK -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-md p-space-lg hover:shadow-xl transition-all duration-200 relative group overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary"></div>
+<div>
+<!-- Card Header Badges -->
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-highest text-primary font-label-caps text-label-caps uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-[14px]">badge</span> Master Data Gaji HCM
+            </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-caps text-label-caps uppercase font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Menunggu Approval Owner
+            </span>
+</div>
+<!-- Title & Submitter -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug mb-space-xs group-hover:text-primary transition-colors">
+            Pengesahan Master Skema Gaji Pokok &amp; Tunjangan Makan (Skala Upah Q4 2026)
+          </h3>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-md">
+<span class="material-symbols-outlined text-[16px]">person</span>
+<span>Diajukan oleh: <strong class="text-on-surface">Ratna Sari, S.Psi</strong> (HR Manager)</span>
+</div>
+<!-- Breakdown Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-baseline justify-between mb-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Cakupan Regulasi Standarisasi</span>
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim bg-tertiary-container px-1.5 py-0.5 rounded font-bold">8 Jabatan Utama</span>
+</div>
+<div class="space-y-1.5 text-body-sm">
+<div class="flex items-center justify-between bg-surface-container-lowest/80 px-space-sm py-1 rounded">
+<span class="text-on-surface font-medium truncate max-w-[140px]">General Manager</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-primary font-bold">Rp 10.000.000 + Rp 1.300.000 Mkn</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest/80 px-space-sm py-1 rounded">
+<span class="text-on-surface font-medium truncate max-w-[140px]">Programmer Lead</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-primary font-bold">Rp 8.000.000</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest/80 px-space-sm py-1 rounded">
+<span class="text-on-surface font-medium truncate max-w-[140px]">HR Staff / Finance</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-primary font-bold">Rp 4.500.000</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest/80 px-space-sm py-1 rounded">
+<span class="text-on-surface font-medium truncate max-w-[140px]">SPG &amp; Retail Galeri</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-primary font-bold">Rp 2.500.000 (Sesuai UMR)</span>
+</div>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-secondary-fixed-variant">gavel</span>
+<span>Kepatuhan PP Pengupahan No. 36/2021 &amp; SKEP Direksi</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full h-10 px-space-md rounded-lg bg-secondary hover:bg-secondary-container text-on-secondary font-headline-sm text-body-md font-bold flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]" onclick="openApprovalModal('skema')" type="button"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span>Setujui Skema Gaji</span></button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="h-9 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm font-semibold flex items-center justify-center gap-1 transition-colors" onclick="toggleDetailDrawer('drawer-skema')" type="button">
+<span class="material-symbols-outlined text-[16px]">table_chart</span>
+<span>Preview Skema</span>
+</button>
+<button class="h-9 px-space-sm rounded-lg bg-surface-container-low hover:bg-error-container hover:text-on-error-container text-on-surface-variant font-body-sm font-semibold flex items-center justify-center gap-1 transition-colors" onclick="rejectPrompt('Pengesahan Skema Gaji Pokok &amp; Tunjangan')" type="button">
+<span class="material-symbols-outlined text-[16px]">undo</span>
+<span>Tolak / Revisi</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KARTU 3: PEMBAYARAN UTANG USAHA SUPPLIER BAHAN BAKU -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-md p-space-lg hover:shadow-xl transition-all duration-200 relative group overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-on-tertiary-container"></div>
+<div>
+<!-- Card Header Badges -->
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps uppercase font-bold tracking-wider"><span class="material-symbols-outlined text-[14px]">account_balance_wallet</span> Kas Operasional</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-caps text-label-caps uppercase font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Menunggu Approval Owner
+            </span>
+</div>
+<!-- Title & Submitter -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug mb-space-xs group-hover:text-secondary transition-colors">
+            Otorisasi Pembayaran Utang Usaha Supplier Bahan Baku Kritis
+          </h3>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-md">
+<span class="material-symbols-outlined text-[16px]">person</span>
+<span>Diajukan oleh: <strong class="text-on-surface">Arga Wicaksana, S.Ak</strong> (Finance Lead)</span>
+</div>
+<!-- Highlight Amount Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Nilai Disburse Pengeluaran</span>
+<span class="font-label-caps text-label-caps text-error font-bold">Jatuh Tempo ≤ 7 Hari</span>
+</div>
+<div class="font-label-numeric-lg text-label-numeric-lg text-primary font-bold tracking-tight">
+              Rp 84.600.000
+            </div>
+<div class="mt-space-sm space-y-1 text-body-sm">
+<div class="flex items-center justify-between bg-surface-container-lowest/80 px-space-sm py-1 rounded">
+<span class="text-on-surface font-medium truncate">PT Mori Sutra Prima (Kain Mori Primissima)</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-semibold">Rp 52.400.000</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest/80 px-space-sm py-1 rounded">
+<span class="text-on-surface font-medium truncate">CV Sinar Warna Alami (Pewarna Indigosol)</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-semibold">Rp 32.200.000</span>
+</div>
+</div>
+<div class="mt-2 pt-1 border-t-0 flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Posisi Kas Bank Mandiri Operasional:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary font-bold">Rp 1.428.500.000</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full h-10 px-space-md rounded-lg bg-secondary hover:bg-secondary-container text-on-secondary font-headline-sm text-body-md font-bold flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]" onclick="openApprovalModal('supplier')" type="button">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+<span>Setujui Pengeluaran Kas</span>
+</button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="h-9 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm font-semibold flex items-center justify-center gap-1 transition-colors" onclick="toggleDetailDrawer('drawer-faktur')" type="button">
+<span class="material-symbols-outlined text-[16px]">description</span>
+<span>Review Faktur</span>
+</button>
+<button class="h-9 px-space-sm rounded-lg bg-surface-container-low hover:bg-error-container hover:text-on-error-container text-on-surface-variant font-body-sm font-semibold flex items-center justify-center gap-1 transition-colors" onclick="rejectPrompt('Pembayaran Utang Supplier Bahan Baku')" type="button">
+<span class="material-symbols-outlined text-[16px]">undo</span>
+<span>Tolak / Revisi</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: COMPREHENSIVE APPROVAL HISTORY & AUDIT LOG TABLE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Semua Riwayat Approval &amp; Log Audit Otorisasi Owner</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Arsip komprehensif seluruh pengajuan otorisasi, status disposisi, dan jejak tanda tangan digital H. Sudirman.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="h-9 pl-9 pr-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary w-64 md:w-80 shadow-inner" placeholder="Cari ID, jenis pengajuan, pemohon..." type="text">
+</div>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm font-semibold flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Ekspor Rekap (XLSX)</span>
+</button>
+</div>
+</div>
+<!-- Tabular Data Display -->
+<div class="overflow-x-auto rounded-xl">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-3 px-space-md">ID Pengajuan</th>
+<th class="py-3 px-space-md">Waktu Diajukan</th>
+<th class="py-3 px-space-md">Jenis Pengajuan</th>
+<th class="py-3 px-space-md">Divisi / Modul</th>
+<th class="py-3 px-space-md">Pemohon</th>
+<th class="py-3 px-space-md text-right">Nilai / Dampak</th>
+<th class="py-3 px-space-md">Status Otorisasi</th>
+<th class="py-3 px-space-md text-center">Aksi Cepat</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm">
+<!-- Row 1: Urgent Payroll -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-error-container/10">
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-primary font-bold whitespace-nowrap">
+              REQ-2026-10-091
+            </td>
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-on-surface-variant whitespace-nowrap">
+              24 Okt 2026, 08:30 WIB
+            </td>
+<td class="py-3.5 px-space-md font-semibold text-on-surface">
+              Gaji Massal Reguler Oktober 2026
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps font-semibold">Payroll HCM</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Ratna Sari, S.Psi</span>
+<span class="text-on-surface-variant text-[11px]">HR Manager</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-numeric-md text-label-numeric-md font-bold text-primary whitespace-nowrap">
+              Rp 48.067.625
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span> Menunggu Approval
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded bg-secondary text-on-secondary hover:bg-secondary-container transition-colors shadow-sm" onclick="openApprovalModal('payroll')" title="Otorisasi Langsung" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors shadow-sm" title="Cetak Ringkasan Slip" type="button">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Urgent Skema Gaji -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-error-container/10">
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-primary font-bold whitespace-nowrap">
+              REQ-2026-10-090
+            </td>
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-on-surface-variant whitespace-nowrap">
+              23 Okt 2026, 16:45 WIB
+            </td>
+<td class="py-3.5 px-space-md font-semibold text-on-surface">
+              Pengesahan Master Skala Upah Q4 2026
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-caps text-label-caps font-semibold">Master Remunerasi</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Ratna Sari, S.Psi</span>
+<span class="text-on-surface-variant text-[11px]">HR Manager</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-numeric-md text-label-numeric-md font-bold text-on-surface whitespace-nowrap">
+              8 Standar Jabatan
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span> Menunggu Approval
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<div class="flex items-center justify-center gap-1">
+<button class="w-full h-10 px-space-md rounded-lg bg-secondary hover:bg-secondary-container text-on-secondary font-headline-sm text-body-md font-bold flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]" onclick="openApprovalModal('skema')" type="button"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span>Setujui Skema Gaji</span></button>
+<button class="p-1.5 rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors shadow-sm" title="Download Skema PDF" type="button">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Urgent Supplier Mori -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-error-container/10">
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-primary font-bold whitespace-nowrap">
+              REQ-2026-10-088
+            </td>
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-on-surface-variant whitespace-nowrap">
+              23 Okt 2026, 11:15 WIB
+            </td>
+<td class="py-3.5 px-space-md font-semibold text-on-surface">
+              Pembayaran Mori Sutra Prima (Faktur #8821)
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps font-semibold">Pembukuan / Kas</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Arga Wicaksana, S.Ak</span>
+<span class="text-on-surface-variant text-[11px]">Finance Lead</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-numeric-md text-label-numeric-md font-bold text-primary whitespace-nowrap">
+              Rp 84.600.000
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span> Menunggu Approval
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded bg-secondary text-on-secondary hover:bg-secondary-container transition-colors shadow-sm" onclick="openApprovalModal('supplier')" title="Otorisasi Langsung" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors shadow-sm" title="Unduh Invoice PDF" type="button">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Approved - Gaji September -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-on-surface-variant whitespace-nowrap">
+              REQ-2026-09-074
+            </td>
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-on-surface-variant whitespace-nowrap">
+              25 Sep 2026, 14:10 WIB
+            </td>
+<td class="py-3.5 px-space-md font-semibold text-on-surface">
+              Gaji Massal Karyawan September 2026
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps font-semibold">Payroll HCM</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Ratna Sari, S.Psi</span>
+<span class="text-on-surface-variant text-[11px]">HR Manager</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-numeric-md text-label-numeric-md font-medium text-on-surface whitespace-nowrap">
+              Rp 47.850.000
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-caps text-label-caps font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Selesai Dibukukan
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface font-body-sm hover:bg-surface-container-high transition-colors text-[11px] font-semibold" type="button">
+                Lihat Bukti Bank
+              </button>
+</td>
+</tr>
+<!-- Row 5: Approved - Pembelian Pewarna Alami Solo -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-on-surface-variant whitespace-nowrap">
+              REQ-2026-09-068
+            </td>
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-on-surface-variant whitespace-nowrap">
+              20 Sep 2026, 09:20 WIB
+            </td>
+<td class="py-3.5 px-space-md font-semibold text-on-surface">
+              Pelunasan Lilin Batik &amp; Malam Sawit Q3
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps font-semibold">Expenditure</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Arga Wicaksana, S.Ak</span>
+<span class="text-on-surface-variant text-[11px]">Finance Lead</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-numeric-md text-label-numeric-md font-medium text-on-surface whitespace-nowrap">
+              Rp 38.250.000
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-caps text-label-caps font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Disetujui Owner
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface font-body-sm hover:bg-surface-container-high transition-colors text-[11px] font-semibold" type="button">
+                Audit Trail
+              </button>
+</td>
+</tr>
+<!-- Row 6: Rejected / Returned -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-on-surface-variant whitespace-nowrap">
+              REQ-2026-09-052
+            </td>
+<td class="py-3.5 px-space-md font-label-numeric-sm text-label-numeric-sm text-on-surface-variant whitespace-nowrap">
+              15 Sep 2026, 17:30 WIB
+            </td>
+<td class="py-3.5 px-space-md font-semibold text-on-surface">
+              Renovasi Workshop Galeri Surabaya
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps font-semibold">Expenditure</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Bambang S.</span>
+<span class="text-on-surface-variant text-[11px]">Ops Manager Sby</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-numeric-md text-label-numeric-md font-medium text-error whitespace-nowrap">
+              Rp 65.000.000
+            </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Ditolak (Revisi RAB)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant font-body-sm hover:bg-surface-container-high transition-colors text-[11px]" type="button">
+                Catatan Evaluasi
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- SECTION 3: AUDIT TRAIL & EXECUTIVE SECURITY GOVERNANCE PANEL -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter mb-space-lg">
+<!-- Security Box -->
+
+<!-- Automatic Ledger Sync Box -->
+
+<!-- Executive Sign-off Timestamp Profile -->
+
+</div>
+<!-- POP-UP MODAL: FINAL OWNER APPROVAL CONFIRMATION -->
+<div class="fixed inset-0 bg-primary/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-space-md" id="modal-approval-overlay">
+<div class="bg-surface-container-lowest rounded-xl shadow-2xl max-w-lg w-full p-space-lg flex flex-col gap-space-md animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-space-sm border-b-0">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold leading-tight" id="modal-title">Otorisasi Pembayaran Gaji</h3>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Verifikasi Otoritas Pemilik Perusahaan</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" onclick="closeApprovalModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-xs">
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Dampak Pengeluaran Kas:</span>
+<span class="font-label-numeric-lg text-label-numeric-lg text-primary font-bold" id="modal-amount">Rp 48.067.625</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Target Rekening / Modul:</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface" id="modal-target">8 Rekening Pegawai (BCA Payroll)</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Otorisator:</span>
+<span class="font-body-sm text-body-sm font-bold text-on-surface">H. Sudirman (Owner / Dirut)</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-body-sm text-body-sm font-semibold text-on-surface">
+          Masukkan PIN Keamanan Finansial Eksekutif (6-Digit)
+        </label>
+<div class="flex items-center gap-space-xs">
+<input class="h-10 w-full px-space-md rounded-lg bg-surface-container text-center font-label-numeric-lg text-label-numeric-lg tracking-widest text-primary focus:outline-none focus:ring-2 focus:ring-secondary shadow-inner" maxlength="6" placeholder="******" type="password">
+</div>
+<span class="text-[11px] text-on-surface-variant">Tindakan ini tidak dapat dibatalkan setelah data terkirim ke Host-to-Host Bank Mandiri.</span>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm font-semibold transition-colors" onclick="closeApprovalModal()" type="button">
+          Batalkan
+        </button>
+<button class="px-space-lg py-2 rounded-lg bg-secondary hover:bg-secondary-container text-on-secondary font-headline-sm text-body-md font-bold flex items-center gap-1.5 shadow-md transition-all" onclick="executeApproval()" type="button">
+<span class="material-symbols-outlined text-[18px]">lock_open</span>
+<span>Tanda Tangani &amp; Eksekusi</span>
+</button>
+</div>
+</div>
+</div>
+<!-- OFF-CANVAS SLIDE DRAWER (Preview Rincian Gaji / Skema) -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 hidden flex justify-end" id="detail-drawer">
+<div class="bg-surface-container-lowest w-full max-w-xl h-full shadow-2xl p-space-lg flex flex-col justify-between overflow-y-auto">
+<div>
+<div class="flex items-center justify-between pb-space-md border-b-0">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">visibility</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold" id="drawer-title">Rincian Dokumen Pengajuan</h3>
+</div>
+<button class="p-1.5 rounded-lg hover:bg-surface-container-high text-on-surface-variant transition-colors" onclick="toggleDetailDrawer()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="mt-space-md space-y-space-md" id="drawer-content">
+<!-- Dynamic injected item -->
+<div class="bg-surface-container-low p-space-md rounded-xl">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Rekapitulasi Gaji 8 Karyawan</h4>
+<div class="space-y-2 text-body-sm">
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2 rounded">
+<span>1. H. Sudirman (Direktur Utama)</span>
+<span class="font-label-numeric-sm font-bold">Rp 12.000.000</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2 rounded">
+<span>2. Ratna Sari (HR Manager)</span>
+<span class="font-label-numeric-sm font-bold">Rp 7.500.000</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2 rounded">
+<span>3. Arga Wicaksana (Finance Lead)</span>
+<span class="font-label-numeric-sm font-bold">Rp 6.800.000</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2 rounded">
+<span>4. Danang Prasetyo (Lead Designer)</span>
+<span class="font-label-numeric-sm font-bold">Rp 6.200.000</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2 rounded">
+<span>5. Siti Aminah (Master Pengrajin Tulis)</span>
+<span class="font-label-numeric-sm font-bold">Rp 4.950.000</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2 rounded">
+<span>6. Bambang S. (SPV Galeri Surabaya)</span>
+<span class="font-label-numeric-sm font-bold">Rp 4.250.000</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2 rounded">
+<span>7. Dewi Lestari (Senior SPG Galeri Malang)</span>
+<span class="font-label-numeric-sm font-bold">Rp 3.167.625</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2 rounded">
+<span>8. Rian Hidayat (Logistik &amp; Gudang)</span>
+<span class="font-label-numeric-sm font-bold">Rp 3.200.000</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t-0 flex justify-end">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm font-semibold transition-colors" onclick="toggleDetailDrawer()" type="button">
+          Tutup Pratinjau
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function openApprovalModal(type) {
+    const modal = document.getElementById('modal-approval-overlay');
+    const title = document.getElementById('modal-title');
+    const amount = document.getElementById('modal-amount');
+    const target = document.getElementById('modal-target');
+
+    if (type === 'payroll') {
+      title.innerText = 'Otorisasi Pembayaran Gaji Massal';
+      amount.innerText = 'Rp 48.067.625';
+      target.innerText = '8 Rekening Pegawai (Host-to-Host Payroll)';
+    } else if (type === 'skema') {
+      title.innerText = 'Pengesahan Master Skema Upah Q4 2026';
+      amount.innerText = 'Standarisasi 8 Jabatan';
+      target.innerText = 'Struktur Organisasi & Skala Upah';
+    } else if (type === 'supplier') {
+      title.innerText = 'Otorisasi Pengeluaran Utang Supplier Bahan Baku';
+      amount.innerText = 'Rp 84.600.000';
+      target.innerText = 'PT Mori Sutra Prima & CV Sinar Warna';
+    }
+
+    modal.classList.remove('hidden');
+  }
+
+  function closeApprovalModal() {
+    document.getElementById('modal-approval-overlay').classList.add('hidden');
+  }
+
+  function toggleDetailDrawer(drawerId) {
+    const drawer = document.getElementById('detail-drawer');
+    if (drawer.classList.contains('hidden')) {
+      drawer.classList.remove('hidden');
+    } else {
+      drawer.classList.add('hidden');
+    }
+  }
+
+  function rejectPrompt(itemTitle) {
+    const reason = prompt('Masukkan alasan penolakan / revisi untuk diajukan kembali ke manajer:', 'Perlu penyesuaian anggaran komponen tunjangan');
+    if (reason) {
+      alert('Pengajuan "' + itemTitle + '" telah ditolak dan dikembalikan dengan catatan: ' + reason);
+    }
+  }
+
+  function executeApproval() {
+    alert('Sukses! Digital Signature telah dibubuhkan. Dana kas terverifikasi dan otorisasi dikirimkan ke modul Buku Besar & Host-to-Host Perbankan.');
+    closeApprovalModal();
+  }
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-space-sm px-gutter"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-body-sm text-body-sm font-medium">Server Online</span></div><span class="text-outline-variant font-body-sm text-body-sm">|</span><span class="font-body-sm text-body-sm">Enterprise V2.4</span><span class="text-outline-variant font-body-sm text-body-sm">|</span><span class="font-body-sm text-body-sm font-semibold text-on-surface">FY 2026</span></div><div class="font-body-sm text-body-sm">© 2026 PT Java Batik Megah Nusantara. Hak Cipta Dilindungi.</div></div></footer></div>
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

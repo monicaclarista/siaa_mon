@@ -1,0 +1,501 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#00174b","primary":"#091426","secondary-fixed-dim":"#b4c5ff","tertiary-container":"#002d36","outline":"#75777d","tertiary-fixed":"#acedff","on-surface":"#0b1c30","primary-fixed-dim":"#bcc7de","on-tertiary-fixed":"#001f26","background":"#f8f9ff","primary-container":"#1e293b","error":"#ba1a1a","surface-container-lowest":"#ffffff","outline-variant":"#c5c6cd","secondary-fixed":"#dbe1ff","on-primary-fixed":"#111c2d","surface-dim":"#cbdbf5","tertiary":"#00171c","on-secondary-fixed-variant":"#003ea8","primary-fixed":"#d8e3fb","on-secondary":"#ffffff","surface":"#f8f9ff","surface-container-highest":"#d3e4fe","surface-tint":"#545f73","inverse-surface":"#213145","on-error-container":"#93000a","surface-bright":"#f8f9ff","on-primary-fixed-variant":"#3c475a","on-background":"#0b1c30","on-tertiary-fixed-variant":"#004e5c","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#4cd7f6","on-secondary-container":"#fefcff","secondary":"#0051d5","inverse-primary":"#bcc7de","surface-container":"#e5eeff","on-surface-variant":"#45474c","secondary-container":"#316bf3","surface-container-low":"#eff4ff","surface-variant":"#d3e4fe","surface-container-high":"#dce9ff","on-tertiary-container":"#009db7","on-tertiary":"#ffffff","on-primary-container":"#8590a6","on-error":"#ffffff","error-container":"#ffdad6","on-primary":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","margin":"1.75rem","space-sm":"0.5rem","space-md":"0.875rem","gutter":"1.25rem","space-xl":"2rem","space-lg":"1.25rem"},"fontFamily":{"label-caps":["Inter"],"label-numeric-md":["JetBrains Mono"],"body-md":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"headline-xl":["Inter"],"label-numeric-lg":["JetBrains Mono"],"label-numeric-sm":["JetBrains Mono"],"headline-sm":["Inter"]},"fontSize":{"label-caps":["0.6875rem",{"lineHeight":"1rem","letterSpacing":"0.05em","fontWeight":"700"}],"label-numeric-md":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["0.75rem",{"lineHeight":"1rem","fontWeight":"400"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"headline-xl":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"700"}],"label-numeric-lg":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-numeric-sm":["0.75rem",{"lineHeight":"1rem","fontWeight":"500"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-[calc(100vh-60px)]"><div class="h-16 flex items-center px-space-lg gap-space-sm border-b border-outline-variant/30"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-md text-headline-sm font-bold tracking-tight">P</div><div class="flex flex-col"><span class="font-headline-sm text-body-md font-bold tracking-tight text-primary leading-tight">PAYROLL HCM</span><span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider">ENTERPRISE V2.4</span></div></div><div class="flex-1 overflow-y-auto py-space-md px-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-secondary-container text-on-secondary font-semibold rounded-lg shadow-sm"><div class="px-space-md pt-space-xs pb-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">UTAMA</span></div><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">MASTER DATA</span></div><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="data-karyawan" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Data Karyawan</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="data-jabatan" href="#"><span class="material-symbols-outlined text-[20px]">corporate_fare</span><span>Data Jabatan</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="data-gaji" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Data Gaji</span></a><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">REKAP PRESENSI</span></div><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="time-management" href="#"><span class="material-symbols-outlined text-[20px]">schedule</span><span>Time Management</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="data-presensi" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Data Presensi</span></a><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">HITUNG GAJI</span></div><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-colors bg-secondary-container text-on-secondary font-semibold rounded-lg shadow-sm" data-path="pembayaran-gaji" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Pembayaran Gaji</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="pajak-pph-21" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Pajak PPh 21</span></a></nav></div></div><div class="h-[60px] px-space-md flex items-center justify-between border-t border-outline-variant/30 bg-surface-container-low/40"><div class="flex items-center gap-space-sm"><span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-emerald-200 animate-pulse"></span><span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Server Online</span></div><span class="font-label-numeric-sm text-label-numeric-sm text-outline">v2.4.0</span></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg flex-1"><div class="relative flex items-center"><div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg border border-outline-variant/60 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-body-sm text-body-sm font-medium transition-colors"><span class="material-symbols-outlined text-[18px] text-secondary">domain</span><select class="bg-transparent font-body-sm text-body-sm text-on-surface font-medium focus:outline-none cursor-pointer pr-1"><option selected="">Kantor Pusat - Malang</option><option>Cabang Surabaya</option><option>Cabang Jakarta</option></select></div></div><div class="max-w-md w-full relative"></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" title="Sinkronisasi Sistem" type="button"><span class="material-symbols-outlined text-[20px]">sync</span></button><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" title="Pusat Bantuan" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button><button class="relative w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" title="Notifikasi" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button></div><div class="h-8 w-px bg-outline-variant/40 mx-space-xs"></div><div class="flex items-center gap-space-md"><div class="flex flex-col text-right"><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Ratna Sari, S.Psi</span><span class="font-label-caps text-label-caps text-secondary font-bold tracking-wide">HR MANAGER</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button type="button" onclick="document.getElementById('logout-modal').classList.remove('hidden')" class="w-9 h-9 rounded-lg flex items-center justify-center text-error hover:bg-error-container/60 hover:text-on-error-container transition-colors ml-1" title="Keluar / Logout"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+
+<div class="px-space-lg py-space-lg flex flex-col gap-space-lg"><!-- Header & Title Section -->
+<div class="flex flex-col gap-space-md pb-space-sm border-b border-outline-variant/30">
+  <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+    <div class="flex flex-col gap-1">
+      <div class="flex flex-wrap items-center gap-2">
+        <h1 class="text-[24px] font-bold text-primary tracking-tight leading-snug">Pembayaran Gaji Karyawan</h1>
+        
+      <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-caps text-label-caps font-bold"><span class="material-symbols-outlined text-[14px]">verified</span><span>Disetujui Owner</span></span></div>
+      
+    </div>
+    <div class="flex flex-wrap items-center gap-2 shrink-0">
+      <button type="button" title="Unduh Semua Slip Gaji PDF" class="h-9 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm font-semibold hover:bg-surface-container-low border border-outline-variant/40 transition-colors shadow-sm flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-[18px] text-error">picture_as_pdf</span>
+        <span>Unduh Semua Slip (ZIP)</span>
+      </button>
+      <button type="button" class="h-9 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm font-semibold hover:bg-surface-container-low border border-outline-variant/40 transition-colors shadow-sm flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-[18px] text-on-surface-variant">download</span>
+        <span>Unduh CSV (MCM)</span>
+      </button>
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- KPI Metric Cards (4 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter">
+  <!-- Card 1: Total Dana -->
+  <div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm border border-outline-variant/30 flex flex-col justify-between gap-3">
+    <div class="flex items-center justify-between">
+      <span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Total Dana Siap Transfer (Net THP)</span>
+      <div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
+        <span class="material-symbols-outlined text-[18px]">payments</span>
+      </div>
+    </div>
+    <div>
+      <div class="font-label-numeric-lg text-headline-lg font-bold text-primary tracking-tight">Rp 46.804.546</div>
+      <div class="mt-1 flex items-center gap-1.5">
+        <span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 font-label-caps text-label-caps font-bold">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> 8 Karyawan Terverifikasi
+        </span>
+        <span class="font-label-caps text-label-caps text-emerald-700 font-bold">(100% MATCH)</span>
+      </div>
+    </div>
+    <div class="pt-2 border-t border-outline-variant/20 text-outline font-body-sm text-[12px] flex items-center gap-1">
+      <span class="material-symbols-outlined text-[15px] text-secondary">sync_alt</span>
+      <span class="truncate">Rekonsiliasi Pajak PPh 21 &amp; Slip Gaji</span>
+    </div>
+  </div>
+
+  <!-- Card 2: Sumber Rekening -->
+  <div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm border border-outline-variant/30 flex flex-col justify-between gap-3">
+    <div class="flex items-center justify-between">
+      <span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Sumber Rekening Operasional (Escrow)</span>
+      <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+        <span class="material-symbols-outlined text-[18px]">account_balance</span>
+      </div>
+    </div>
+    <div>
+      <div class="font-body-md text-body-md font-bold text-primary truncate">Bank Mandiri (Persero) Tbk</div>
+      <div class="font-label-numeric-md text-label-numeric-md text-secondary font-semibold tracking-tight">120-00-8899120-4</div>
+      <div class="font-label-caps text-[10px] text-outline uppercase font-semibold mt-0.5">PT KARYA ENTERPRISE INDONESIA</div>
+    </div>
+    <div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant font-body-sm text-[12px]">
+      <span>Saldo Kas: <strong class="text-primary font-label-numeric-sm font-semibold">Rp 350.000.000</strong></span>
+      <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold">Likuid</span>
+    </div>
+  </div>
+
+  <!-- Card 3: Biaya Transaksi -->
+  <div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm border border-outline-variant/30 flex flex-col justify-between gap-3">
+    <div class="flex items-center justify-between">
+      <span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Biaya Transaksi &amp; Kliring</span>
+      <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant shrink-0">
+        <span class="material-symbols-outlined text-[18px]">receipt</span>
+      </div>
+    </div>
+    <div>
+      <div class="font-label-numeric-lg text-headline-lg font-bold text-primary tracking-tight">Rp 10.000</div>
+      <div class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-[12px]">
+        4 Mandiri (Gratis), 4 BI-FAST (Rp 2.500)
+      </div>
+    </div>
+    <div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-outline font-body-sm text-[12px]">
+      <span class="flex items-center gap-1">
+        <span class="material-symbols-outlined text-[15px] text-secondary">bolt</span>
+        <span>SLA: Real-Time</span>
+      </span>
+      <span class="font-label-numeric-sm text-label-numeric-sm font-medium">&lt; 5 Menit Kliring</span>
+    </div>
+  </div>
+
+  <!-- Card 4: Workflow Approval -->
+  <div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm border border-outline-variant/30 flex flex-col justify-between gap-3">
+    <div class="flex items-center justify-between">
+      <span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Status Workflow Persetujuan</span>
+      <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-label-caps text-label-caps font-bold">2/3 APPROVAL</span>
+    </div>
+    <div>
+      <div class="font-body-md text-body-md font-bold text-primary">Menunggu Otorisasi CFO</div>
+      <div class="mt-1 space-y-0.5">
+        <div class="flex items-center justify-between font-body-sm text-[12px]">
+          <span class="text-on-surface-variant">HR Manager (Ratna S.)</span>
+          <span class="text-emerald-700 font-semibold flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">check</span>Disetujui</span>
+        </div>
+        <div class="flex items-center justify-between font-body-sm text-[12px]">
+          <span class="text-on-surface-variant">Finance Spv (Hendro W.)</span>
+          <span class="text-emerald-700 font-semibold flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">check</span>Disetujui</span>
+        </div>
+      </div>
+    </div>
+    <div class="pt-2 border-t border-outline-variant/20 font-label-caps text-label-caps text-secondary font-bold flex items-center justify-between">
+      <span class="flex items-center gap-1">
+        <span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+        <span>LEVEL 3: SIAP DIEKSEKUSI</span>
+      </span>
+      <span class="text-on-surface-variant font-normal text-[10px]">Tahap Akhir</span>
+    </div>
+  </div>
+</div>
+
+<!-- Filter Bar & Integrasi Status Terpadu -->
+<div class="rounded-xl bg-surface-container-lowest p-3 shadow-sm border border-outline-variant/30 flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+  <div class="flex flex-1 flex-wrap items-center gap-2">
+    <!-- Search -->
+    <div class="relative min-w-[260px] flex-1 max-w-md">
+      <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span>
+      <input type="text" placeholder="Cari NIK, Nama Karyawan, No. Rekening, Bank..." class="w-full h-9 pl-9 pr-3 bg-surface-container-low rounded-lg text-on-surface font-body-sm text-body-sm placeholder:text-outline border border-transparent focus:border-secondary focus:bg-surface-container-lowest focus:outline-none transition-all">
+    </div>
+    <!-- Periode Picker -->
+    <div class="h-9 px-2 bg-surface-container-low rounded-lg flex items-center gap-1 border border-outline-variant/30">
+      <button type="button" title="Bulan Sebelumnya" class="w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors">
+        <span class="material-symbols-outlined text-[16px]">chevron_left</span>
+      </button>
+      <div class="flex items-center gap-1 px-1">
+        <span class="material-symbols-outlined text-[16px] text-secondary">calendar_month</span>
+        <select class="bg-transparent font-body-sm text-body-sm text-on-surface font-semibold focus:outline-none cursor-pointer pr-1">
+          <option>Januari 2026</option>
+          <option>Februari 2026</option>
+          <option>Maret 2026</option>
+          <option>April 2026</option>
+          <option>Mei 2026</option>
+          <option>Juni 2026</option>
+          <option>Juli 2026</option>
+          <option>Agustus 2026</option>
+          <option>September 2026</option>
+          <option selected="">Oktober 2026</option>
+          <option>November 2026</option>
+          <option>Desember 2026</option>
+        </select>
+      </div>
+      <button type="button" title="Bulan Berikutnya" class="w-6 h-6 flex items-center justify-center rounded text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors">
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+      </button>
+    </div>
+    <!-- Filter Jabatan -->
+    <div class="h-9 px-2.5 bg-surface-container-low rounded-lg flex items-center gap-1 border border-outline-variant/30">
+      <span class="material-symbols-outlined text-[16px] text-secondary">corporate_fare</span>
+      <select class="bg-transparent font-body-sm text-body-sm text-on-surface font-medium focus:outline-none cursor-pointer pr-1">
+        <option value="">Semua Jabatan</option>
+        <option value="gm">General Manager</option>
+        <option value="hr">HR Manager</option>
+        <option value="hr-stf">HR Staff</option>
+        <option value="prog-mgr">Programmer Manager</option>
+        <option value="prog-stf">Programmer Staff</option>
+        <option value="mkt-stf">Marketing Staff</option>
+        <option value="spg">SPG</option>
+      </select>
+    </div>
+  </div>
+  <!-- Live Status Badge -->
+  <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed border border-secondary-fixed-dim/50 self-start lg:self-auto shrink-0">
+    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+    <span class="font-label-caps text-label-caps uppercase tracking-wider font-bold text-[11px]">API: H2H Mandiri Cash Management (MCM 2.0) Active</span>
+  </div>
+</div>
+
+<!-- Tabel Pembayaran Gaji Karyawan Berpresisi Tinggi -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/30 overflow-hidden">
+  <div class="overflow-x-auto w-full">
+    <table class="w-full text-left font-body-sm text-[11px] border-collapse min-w-full table-auto">
+      <thead>
+        <tr class="bg-surface-container-low text-on-surface-variant font-label-caps text-[10px] uppercase tracking-wider border-b border-outline-variant/30">
+          <th class="py-2.5 px-3 w-8 text-center"><input type="checkbox" checked="" class="rounded border-outline-variant text-secondary focus:ring-0 w-3.5 h-3.5"></th>
+          <th class="py-2.5 px-3 min-w-[140px]">KARYAWAN</th>
+          <th class="py-2.5 px-3 min-w-[120px]">JABATAN</th>
+          <th class="py-2.5 px-3 min-w-[110px]">ID &amp; PRESENSI</th>
+          <th class="py-2.5 px-3 min-w-[130px]">REKENING TUJUAN</th>
+          <th class="py-2.5 px-3 min-w-[80px]">ID GAJI</th>
+          <th class="py-2.5 px-3 text-right font-medium min-w-[90px]">GAJI POKOK</th>
+          <th class="py-2.5 px-3 text-right font-medium min-w-[85px]">TUNJ. MAKAN</th>
+          <th class="py-2.5 px-3 text-right font-medium min-w-[70px]">LEMBUR</th>
+          <th class="py-2.5 px-3 text-right font-medium min-w-[75px]">BONUS</th><th class="py-2.5 px-3 text-right font-medium min-w-[75px] text-error">DENDA TELAT</th>
+          <th class="py-2.5 px-3 text-right font-medium min-w-[75px] text-error">BPJS</th>
+          <th class="py-2.5 px-3 text-right font-medium min-w-[80px] text-error">PPH 21</th>
+          <th class="py-2.5 px-3 text-right font-bold text-primary min-w-[95px]">TOTAL THP</th>
+          
+          <th class="py-2.5 px-3 text-center min-w-[95px]">AKSI</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-surface-container-low text-on-surface text-[11px]">
+        <!-- Row 1: Budi Santoso -->
+        <tr class="hover:bg-surface-container-low/60 transition-colors">
+          <td class="py-2 px-3 text-center"><input type="checkbox" checked="" class="rounded text-secondary focus:ring-0 w-3.5 h-3.5"></td>
+          <td class="py-2 px-3">
+            <div class="font-bold text-primary leading-tight text-[11px]">Budi Santoso</div>
+            <div class="text-outline font-label-numeric-sm text-[10px] mt-0.5">NIK: 1001</div>
+          </td>
+          <td class="py-2 px-3">
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-medium text-[10px]">General Manager</span>
+          </td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary font-label-numeric-sm text-[10px]">PRS-2410-001</div>
+            <div class="text-[10px] text-on-surface-variant">176j • <span class="text-emerald-700 font-semibold">22 Hadir</span></div>
+          </td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary flex items-center gap-1 text-[11px]">
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>Mandiri
+            </div>
+            <div class="font-label-numeric-sm text-[10px] text-secondary font-medium">137-00-1928371-2</div>
+          </td>
+          <td class="py-2 px-3"><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-numeric-sm text-[10px] font-medium">GAJI-01</span></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary"><div class="font-semibold text-primary font-label-numeric-sm text-[11px]">10.000.000</div><div class="font-label-caps text-[9px] text-emerald-700 font-medium">22/22 Hr (100%)</div></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">1.300.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">1.500.000</td><td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-480.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-350.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] font-bold text-primary bg-surface-container-low/30">11.970.000</td>
+          
+          <td class="py-2 px-3 text-center"><div class="flex items-center justify-center gap-1.5"><span class="inline-flex items-center gap-0.5 px-2 py-1 rounded bg-emerald-100 text-emerald-800 text-[10px] font-semibold"><span class="material-symbols-outlined text-[12px] text-emerald-600">check_circle</span><span>Selesai</span></span><button type="button" title="Unduh Slip Gaji PDF (Budi Santoso)" class="px-2 py-1 rounded-lg bg-error-container/60 hover:bg-error-container text-error border border-error/20 font-medium text-[10px] transition-colors inline-flex items-center gap-1 shadow-sm cursor-pointer"><span class="material-symbols-outlined text-[14px]">picture_as_pdf</span><span class="font-semibold">Slip Gaji (PDF)</span></button></div></td>
+        </tr>
+
+        <!-- Row 2: Siti Nurhaliza -->
+        <tr class="hover:bg-surface-container-low/60 transition-colors">
+          <td class="py-2 px-3 text-center"><input type="checkbox" checked="" class="rounded text-secondary focus:ring-0 w-3.5 h-3.5"></td>
+          <td class="py-2 px-3">
+            <div class="font-bold text-primary leading-tight text-[11px]">Siti Nurhaliza</div>
+            <div class="text-outline font-label-numeric-sm text-[10px] mt-0.5">NIK: 1002</div>
+          </td>
+          <td class="py-2 px-3">
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-medium text-[10px]">HR Manager</span>
+          </td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary font-label-numeric-sm text-[10px]">PRS-2410-002</div>
+            <div class="text-[10px] text-on-surface-variant">176j • <span class="text-emerald-700 font-semibold">22 Hadir</span></div>
+          </td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary flex items-center gap-1 text-[11px]">
+              <span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shrink-0"></span>BCA
+            </div>
+            <div class="font-label-numeric-sm text-[10px] text-secondary font-medium">802-192-8831</div>
+          </td>
+          <td class="py-2 px-3"><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-numeric-sm text-[10px] font-medium">GAJI-02</span></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary"><div class="font-semibold text-primary font-label-numeric-sm text-[11px]">7.000.000</div><div class="font-label-caps text-[9px] text-emerald-700 font-medium">22/22 Hr (100%)</div></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">1.000.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">1.000.000</td><td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-620.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-1.415.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] font-bold text-primary bg-surface-container-low/30">6.965.000</td>
+          
+          <td class="py-2 px-3 text-center"><div class="flex items-center justify-center gap-1.5"><span class="inline-flex items-center gap-0.5 px-2 py-1 rounded bg-emerald-100 text-emerald-800 text-[10px] font-semibold"><span class="material-symbols-outlined text-[12px] text-emerald-600">check_circle</span><span>Selesai</span></span><button type="button" title="Unduh Slip Gaji PDF (Siti Nurhaliza)" class="px-2 py-1 rounded-lg bg-error-container/60 hover:bg-error-container text-error border border-error/20 font-medium text-[10px] transition-colors inline-flex items-center gap-1 shadow-sm cursor-pointer"><span class="material-symbols-outlined text-[14px]">picture_as_pdf</span><span class="font-semibold">Slip Gaji (PDF)</span></button></div></td>
+        </tr>
+
+        <!-- Row 3: Dimas Pratama -->
+        <tr class="hover:bg-surface-container-low/60 transition-colors">
+          <td class="py-2 px-3 text-center"><input type="checkbox" checked="" class="rounded text-secondary focus:ring-0 w-3.5 h-3.5"></td>
+          <td class="py-2 px-3">
+            <div class="font-bold text-primary leading-tight text-[11px]">Dimas Pratama</div>
+            <div class="text-outline font-label-numeric-sm text-[10px] mt-0.5">NIK: 1003</div>
+          </td>
+          <td class="py-2 px-3">
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-medium text-[10px]">Programmer Manager</span>
+          </td>
+          <td class="py-2 px-3"><div class="font-semibold text-primary font-label-numeric-sm text-[10px]">PRS-2410-003</div><div class="text-[10px] text-on-surface-variant">176j • <span class="text-amber-800 font-semibold">21H (8j OT)</span></div><div class="font-label-numeric-sm text-[9px] text-error font-medium flex items-center gap-0.5 mt-0.5"><span class="material-symbols-outlined text-[10px]">schedule</span><span>Terlambat 22m (Denda)</span></div></td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary flex items-center gap-1 text-[11px]">
+              <span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shrink-0"></span>BCA
+            </div>
+            <div class="font-label-numeric-sm text-[10px] text-secondary font-medium">521-098-4412</div>
+          </td>
+          <td class="py-2 px-3"><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-numeric-sm text-[10px] font-medium">GAJI-03</span></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary"><div class="font-semibold text-primary font-label-numeric-sm text-[11px]">7.636.364</div><div class="font-label-caps text-[9px] text-amber-800 font-medium">21/22 Hr</div></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">900.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-emerald-700 font-semibold">825.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td><td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error font-semibold"><span class="bg-error-container/60 text-error px-1.5 py-0.5 rounded text-[10px]">-25.000</span></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-480.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-661.750</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] font-bold text-primary bg-surface-container-low/30"><div class="font-label-numeric-sm text-[11px] font-bold text-primary">8.194.614</div><div class="font-label-caps text-[8px] text-error font-medium">-25.000 Denda Absensi</div></td>
+          
+          <td class="py-2 px-3 text-center"><div class="flex flex-col items-center justify-center gap-1"><div class="flex items-center justify-center gap-1.5"><button type="button" title="Bayar Gaji Dimas Pratama (Data akan diberikan ke sistem pengeluaran)" class="py-1 px-2 rounded bg-secondary text-on-secondary hover:bg-secondary-container transition-colors inline-flex items-center gap-1 shadow-sm text-left"><span class="material-symbols-outlined text-[13px] shrink-0">send</span><div class="flex flex-col leading-tight"><span class="text-[10px] font-bold">Bayar</span><span class="text-[8px] text-surface-container-highest/90 font-normal">Data akan diberikan ke sistem pengeluaran</span></div></button><button type="button" title="Edit Komponen Gaji" class="h-6 w-6 rounded bg-surface-container-low text-secondary hover:bg-surface-container text-[10px] font-medium transition-colors inline-flex items-center justify-center"><span class="material-symbols-outlined text-[12px]">edit</span></button></div></div></td>
+        </tr>
+
+        <!-- Row 4: Maya Kusuma -->
+        <tr class="hover:bg-surface-container-low/60 transition-colors">
+          <td class="py-2 px-3 text-center"><input type="checkbox" checked="" class="rounded text-secondary focus:ring-0 w-3.5 h-3.5"></td>
+          <td class="py-2 px-3">
+            <div class="font-bold text-primary leading-tight text-[11px]">Maya Kusuma</div>
+            <div class="text-outline font-label-numeric-sm text-[10px] mt-0.5">NIK: 1004</div>
+          </td>
+          <td class="py-2 px-3">
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-medium text-[10px]">Marketing Specialist</span>
+          </td>
+          <td class="py-2 px-3"><div class="font-semibold text-primary font-label-numeric-sm text-[10px]">PRS-2410-004</div><div class="text-[10px] text-on-surface-variant">152j • <span class="text-amber-800 font-semibold">19 Hadir</span></div></td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary flex items-center gap-1 text-[11px]">
+              <span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shrink-0"></span>BNI
+            </div>
+            <div class="font-label-numeric-sm text-[10px] text-secondary font-medium">098-765-4321</div>
+          </td>
+          <td class="py-2 px-3"><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-numeric-sm text-[10px] font-medium">GAJI-04</span></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary"><div class="font-semibold text-primary font-label-numeric-sm text-[11px]">3.022.727</div><div class="font-label-caps text-[9px] text-amber-800 font-medium">19/22 Hr</div></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">700.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">750.000</td><td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-370.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-352.500</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] font-bold text-primary bg-surface-container-low/30">3.750.227</td>
+          
+          <td class="py-2 px-3 text-center"><div class="flex flex-col items-center justify-center gap-1"><div class="flex items-center justify-center gap-1.5"><button type="button" title="Bayar Gaji Maya Kusuma (Data akan diberikan ke sistem pengeluaran)" class="py-1 px-2 rounded bg-secondary text-on-secondary hover:bg-secondary-container transition-colors inline-flex items-center gap-1 shadow-sm text-left"><span class="material-symbols-outlined text-[13px] shrink-0">send</span><div class="flex flex-col leading-tight"><span class="text-[10px] font-bold">Bayar</span><span class="text-[8px] text-surface-container-highest/90 font-normal">Data akan diberikan ke sistem pengeluaran</span></div></button><button type="button" title="Edit Komponen Gaji" class="h-6 w-6 rounded bg-surface-container-low text-secondary hover:bg-surface-container text-[10px] font-medium transition-colors inline-flex items-center justify-center"><span class="material-symbols-outlined text-[12px]">edit</span></button></div></div></td>
+        </tr>
+
+        <!-- Row 5: Dewi Lestari -->
+        <tr class="hover:bg-surface-container-low/60 transition-colors">
+          <td class="py-2 px-3 text-center"><input type="checkbox" checked="" class="rounded text-secondary focus:ring-0 w-3.5 h-3.5"></td>
+          <td class="py-2 px-3">
+            <div class="font-bold text-primary leading-tight text-[11px]">Dewi Lestari</div>
+            <div class="text-outline font-label-numeric-sm text-[10px] mt-0.5">NIK: 1005</div>
+          </td>
+          <td class="py-2 px-3">
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-medium text-[10px]">SPG</span>
+          </td>
+          <td class="py-2 px-3"><div class="font-semibold text-primary font-label-numeric-sm text-[10px]">PRS-2410-005</div><div class="text-[10px] text-on-surface-variant">148j • <span class="text-amber-800 font-semibold">18H (4j OT)</span></div></td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary flex items-center gap-1 text-[11px]">
+              <span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shrink-0"></span>BRI
+            </div>
+            <div class="font-label-numeric-sm text-[10px] text-secondary font-medium">0123-01-089762-50-1</div>
+          </td>
+          <td class="py-2 px-3"><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-numeric-sm text-[10px] font-medium">GAJI-05</span></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary"><div class="font-semibold text-primary font-label-numeric-sm text-[11px]">2.045.455</div><div class="font-label-caps text-[9px] text-amber-800 font-medium">18/22 Hr</div></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">600.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-emerald-700 font-semibold">350.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">300.000</td><td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-210.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-111.750</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] font-bold text-primary bg-surface-container-low/30">2.973.705</td>
+          
+          <td class="py-2 px-3 text-center"><div class="flex flex-col items-center justify-center gap-1"><div class="flex items-center justify-center gap-1.5"><button type="button" title="Bayar Gaji Dewi Lestari (Data akan diberikan ke sistem pengeluaran)" class="py-1 px-2 rounded bg-secondary text-on-secondary hover:bg-secondary-container transition-colors inline-flex items-center gap-1 shadow-sm text-left"><span class="material-symbols-outlined text-[13px] shrink-0">send</span><div class="flex flex-col leading-tight"><span class="text-[10px] font-bold">Bayar</span><span class="text-[8px] text-surface-container-highest/90 font-normal">Data akan diberikan ke sistem pengeluaran</span></div></button><button type="button" title="Edit Komponen Gaji" class="h-6 w-6 rounded bg-surface-container-low text-secondary hover:bg-surface-container text-[10px] font-medium transition-colors inline-flex items-center justify-center"><span class="material-symbols-outlined text-[12px]">edit</span></button></div></div></td>
+        </tr>
+
+        <!-- Row 6: Hendra Wijaya -->
+        <tr class="hover:bg-surface-container-low/60 transition-colors">
+          <td class="py-2 px-3 text-center"><input type="checkbox" checked="" class="rounded text-secondary focus:ring-0 w-3.5 h-3.5"></td>
+          <td class="py-2 px-3">
+            <div class="font-bold text-primary leading-tight text-[11px]">Hendra Wijaya</div>
+            <div class="text-outline font-label-numeric-sm text-[10px] mt-0.5">NIK: 1006</div>
+          </td>
+          <td class="py-2 px-3">
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-medium text-[10px]">Programmer Staff</span>
+          </td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary font-label-numeric-sm text-[10px]">PRS-2410-006</div>
+            <div class="text-[10px] text-on-surface-variant">182j • <span class="text-emerald-700 font-semibold">22H (6j OT)</span></div>
+          </td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary flex items-center gap-1 text-[11px]">
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>Mandiri
+            </div>
+            <div class="font-label-numeric-sm text-[10px] text-secondary font-medium">137-00-9871234-9</div>
+          </td>
+          <td class="py-2 px-3"><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-numeric-sm text-[10px] font-medium">GAJI-06</span></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary"><div class="font-semibold text-primary font-label-numeric-sm text-[11px]">5.000.000</div><div class="font-label-caps text-[9px] text-emerald-700 font-medium">22/22 Hr (100%)</div></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">750.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-emerald-700 font-semibold">680.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td><td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-480.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-642.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] font-bold text-primary bg-surface-container-low/30">5.308.000</td>
+          
+          <td class="py-2 px-3 text-center"><div class="flex items-center justify-center gap-1.5"><span class="inline-flex items-center gap-0.5 px-2 py-1 rounded bg-emerald-100 text-emerald-800 text-[10px] font-semibold"><span class="material-symbols-outlined text-[12px] text-emerald-600">check_circle</span><span>Selesai</span></span><button type="button" title="Unduh Slip Gaji PDF (Hendra Wijaya)" class="px-2 py-1 rounded-lg bg-error-container/60 hover:bg-error-container text-error border border-error/20 font-medium text-[10px] transition-colors inline-flex items-center gap-1 shadow-sm cursor-pointer"><span class="material-symbols-outlined text-[14px]">picture_as_pdf</span><span class="font-semibold">Slip Gaji (PDF)</span></button></div></td>
+        </tr>
+
+        <!-- Row 7: Anisa Rahmawati -->
+        <tr class="hover:bg-surface-container-low/60 transition-colors">
+          <td class="py-2 px-3 text-center"><input type="checkbox" checked="" class="rounded text-secondary focus:ring-0 w-3.5 h-3.5"></td>
+          <td class="py-2 px-3">
+            <div class="font-bold text-primary leading-tight text-[11px]">Anisa Rahmawati</div>
+            <div class="text-outline font-label-numeric-sm text-[10px] mt-0.5">NIK: 1007</div>
+          </td>
+          <td class="py-2 px-3">
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-medium text-[10px]">HR Staff</span>
+          </td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary font-label-numeric-sm text-[10px]">PRS-2410-007</div>
+            <div class="text-[10px] text-on-surface-variant">176j • <span class="text-emerald-700 font-semibold">22 Hadir</span></div>
+          </td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary flex items-center gap-1 text-[11px]">
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>Mandiri
+            </div>
+            <div class="font-label-numeric-sm text-[10px] text-secondary font-medium">137-00-4455667-1</div>
+          </td>
+          <td class="py-2 px-3"><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-numeric-sm text-[10px] font-medium">GAJI-08</span></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary"><div class="font-semibold text-primary font-label-numeric-sm text-[11px]">4.500.000</div><div class="font-label-caps text-[9px] text-emerald-700 font-medium">22/22 Hr (100%)</div></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">650.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">850.000</td><td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-620.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-1.365.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] font-bold text-primary bg-surface-container-low/30">16.315.000</td>
+          
+          <td class="py-2 px-3 text-center"><div class="flex flex-col items-center justify-center gap-1"><div class="flex items-center justify-center gap-1.5"><button type="button" title="Bayar Gaji Anisa Rahmawati (Data akan diberikan ke sistem pengeluaran)" class="py-1 px-2 rounded bg-secondary text-on-secondary hover:bg-secondary-container transition-colors inline-flex items-center gap-1 shadow-sm text-left"><span class="material-symbols-outlined text-[13px] shrink-0">send</span><div class="flex flex-col leading-tight"><span class="text-[10px] font-bold">Bayar</span><span class="text-[8px] text-surface-container-highest/90 font-normal">Data akan diberikan ke sistem pengeluaran</span></div></button><button type="button" title="Edit Komponen Gaji" class="h-6 w-6 rounded bg-surface-container-low text-secondary hover:bg-surface-container text-[10px] font-medium transition-colors inline-flex items-center justify-center"><span class="material-symbols-outlined text-[12px]">edit</span></button></div></div></td>
+        </tr>
+
+        <!-- Row 8: Rizky Aditya -->
+        <tr class="hover:bg-surface-container-low/60 transition-colors">
+          <td class="py-2 px-3 text-center"><input type="checkbox" checked="" class="rounded text-secondary focus:ring-0 w-3.5 h-3.5"></td>
+          <td class="py-2 px-3">
+            <div class="font-bold text-primary leading-tight text-[11px]">Rizky Aditya</div>
+            <div class="text-outline font-label-numeric-sm text-[10px] mt-0.5">NIK: 1008</div>
+          </td>
+          <td class="py-2 px-3">
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-medium text-[10px]">Marketing Staff</span>
+          </td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary font-label-numeric-sm text-[10px]">PRS-2410-008</div>
+            <div class="text-[10px] text-on-surface-variant">182j • <span class="text-emerald-700 font-semibold">22H (6j OT)</span></div>
+          </td>
+          <td class="py-2 px-3">
+            <div class="font-semibold text-primary flex items-center gap-1 text-[11px]">
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>Mandiri
+            </div>
+            <div class="font-label-numeric-sm text-[10px] text-secondary font-medium">137-00-7788990-3</div>
+          </td>
+          <td class="py-2 px-3"><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-numeric-sm text-[10px] font-medium">GAJI-07</span></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary"><div class="font-semibold text-primary font-label-numeric-sm text-[11px]">4.200.000</div><div class="font-label-caps text-[9px] text-emerald-700 font-medium">22/22 Hr (100%)</div></td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">650.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-emerald-700 font-semibold">580.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-primary">600.000</td><td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-outline">0</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-370.000</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] text-error">-389.375</td>
+          <td class="py-2 px-3 text-right font-label-numeric-sm text-[11px] font-bold text-primary bg-surface-container-low/30">5.270.625</td>
+          
+          <td class="py-2 px-3 text-center"><div class="flex items-center justify-center gap-1.5"><span class="inline-flex items-center gap-0.5 px-2 py-1 rounded bg-emerald-100 text-emerald-800 text-[10px] font-semibold"><span class="material-symbols-outlined text-[12px] text-emerald-600">check_circle</span><span>Selesai</span></span><button type="button" title="Unduh Slip Gaji PDF (Rizky Aditya)" class="px-2 py-1 rounded-lg bg-error-container/60 hover:bg-error-container text-error border border-error/20 font-medium text-[10px] transition-colors inline-flex items-center gap-1 shadow-sm cursor-pointer"><span class="material-symbols-outlined text-[14px]">picture_as_pdf</span><span class="font-semibold">Slip Gaji (PDF)</span></button></div></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="bg-surface-container-high text-on-surface font-semibold border-t-2 border-outline-variant/40 text-[11px]">
+          <td class="py-2.5 px-3 text-center"><span class="material-symbols-outlined text-[16px] text-secondary">done_all</span></td>
+          <td colspan="5" class="py-2.5 px-3">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-primary text-[11px]">Total Batch (8 Karyawan)</span>
+              <span class="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold">4 Dibayar • 4 Menunggu</span>
+            </div>
+          </td>
+          <td class="py-2.5 px-3 text-right font-label-numeric-sm text-[11px] text-primary font-bold">43.404.546</td>
+          <td class="py-2.5 px-3 text-right font-label-numeric-sm text-[11px] text-primary font-bold">6.550.000</td>
+          <td class="py-2.5 px-3 text-right font-label-numeric-sm text-[11px] text-emerald-700 font-bold">2.435.000</td>
+          <td class="py-2.5 px-3 text-right font-label-numeric-sm text-[11px] text-primary font-bold">5.000.000</td><td class="py-2.5 px-3 text-right font-label-numeric-sm text-[11px] text-error font-bold">-25.000</td>
+          <td class="py-2.5 px-3 text-right font-label-numeric-sm text-[11px] text-error font-bold">-3.630.000</td>
+          <td class="py-2.5 px-3 text-right font-label-numeric-sm text-[11px] text-error font-bold">-5.175.400</td>
+          <td class="py-2.5 px-3 text-right font-label-numeric-sm text-[12px] font-bold text-secondary bg-surface-container-highest/30">Rp 46.804.546</td>
+          <td class="py-2.5 px-3 text-center text-outline text-[10px] font-medium">100% Match PPh 21</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+<div class="p-space-md bg-surface-container-low/40 border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-wrap"><div class="flex items-center gap-2"><input type="checkbox" checked="" id="select-all-bottom" class="rounded border-outline-variant text-secondary focus:ring-0 w-4 h-4 cursor-pointer"><label for="select-all-bottom" class="font-body-sm text-body-sm font-semibold text-primary cursor-pointer select-none">Pilih Semua (8)</label></div><div class="h-4 w-px bg-outline-variant/40 hidden md:block"></div><div class="flex items-center gap-2"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-[11px] font-bold"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>8 Terpilih</span><span class="text-body-sm font-body-sm text-on-surface-variant">Total Siap Ditransfer:</span><span class="font-label-numeric-lg text-[16px] font-bold text-primary">Rp 46.804.546</span></div></div><div class="flex flex-col items-end gap-1.5 w-full md:w-auto justify-end"><div class="flex items-center gap-space-sm w-full md:w-auto justify-end"><button type="button" class="h-11 px-3 rounded-lg bg-surface-container-lowest text-on-surface-variant font-body-sm text-body-sm font-medium hover:bg-surface-container-low border border-outline-variant/40 transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">restart_alt</span><span>Reset Pilihan</span></button><button type="button" title="Eksekusi Pembayaran Gaji Karyawan Terpilih &amp; Bukukan ke Pengeluaran Kas" class="h-11 px-space-lg rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm font-bold hover:bg-secondary-container transition-all shadow-sm flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">send</span><div class="flex flex-col text-left leading-tight"><span class="font-bold text-[13px]">Bayar Gaji Karyawan Terpilih (8)</span><span class="text-[10px] font-normal text-surface-container-highest/90">Data akan diberikan ke sistem pengeluaran</span></div></button></div></div></div></div>
+
+<!-- Bottom Section: Protokol Keamanan & Final Clearance Panel -->
+</div>
+</div></main><footer class="w-full h-11 bg-surface-container-lowest border-t border-outline-variant/30 px-space-lg flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm z-30"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-outline">verified_user</span><span>© 2026 Payroll HCM Enterprise System. Hak Cipta Dilindungi.</span></div><div class="flex items-center gap-space-xl font-label-numeric-sm text-label-numeric-sm"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-emerald-500"></span><span class="text-outline">Status Integrasi H2H:</span><span class="font-semibold text-on-surface">Terhubung (Live)</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px] text-secondary">account_balance</span><span class="text-outline">Disbursement Gateway:</span><span class="font-semibold text-on-surface">Mandiri Corporate MCM 2.0</span></div></div></footer></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="logout-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-primary/40 backdrop-blur-sm p-4"><div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-6 shadow-xl border border-outline-variant/30 flex flex-col gap-4"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-error-container/60 flex items-center justify-center text-error shrink-0"><span class="material-symbols-outlined text-[22px]">logout</span></div><div class="flex flex-col"><h3 class="font-headline-sm text-body-lg font-bold text-primary">Konfirmasi Keluar</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Apakah Anda yakin ingin mengakhiri sesi dan keluar dari sistem?</p></div></div><div class="text-body-sm text-outline bg-surface-container-low p-3 rounded-lg flex items-start gap-2 border border-outline-variant/20"><span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">info</span><span>Sesi login Anda akan ditutup dan Anda akan dialihkan kembali ke halaman Login Multi-Role Enterprise.</span></div><div class="flex items-center justify-end gap-2 pt-2 border-t border-outline-variant/20"><button type="button" onclick="document.getElementById('logout-modal').classList.add('hidden')" class="h-9 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm font-semibold hover:bg-surface-container transition-colors">Batal</button><a href="#" onclick="window.location.reload()" class="h-9 px-4 rounded-lg bg-error text-on-error font-body-sm text-body-sm font-semibold hover:bg-error/90 transition-colors inline-flex items-center gap-1.5 shadow-sm"><span class="material-symbols-outlined text-[16px]">logout</span><span>Keluar &amp; Ke Login Multi-Role</span></a></div></div></div>
+
+</body></html>

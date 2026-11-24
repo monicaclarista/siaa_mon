@@ -1,0 +1,930 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#00174b", "tertiary-fixed": "#acedff", "tertiary-container": "#002d36", "on-background": "#0b1c30", "background": "#f8f9ff", "tertiary-fixed-dim": "#4cd7f6", "surface-container-high": "#dce9ff", "on-primary": "#ffffff", "surface-container-low": "#eff4ff", "primary-fixed-dim": "#bcc7de", "surface-bright": "#f8f9ff", "outline": "#75777d", "outline-variant": "#c5c6cd", "on-tertiary-fixed": "#001f26", "on-primary-fixed-variant": "#3c475a", "on-secondary-fixed-variant": "#003ea8", "primary": "#091426", "surface-tint": "#545f73", "inverse-surface": "#213145", "on-error": "#ffffff", "inverse-primary": "#bcc7de", "surface-variant": "#d3e4fe", "on-surface": "#0b1c30", "on-tertiary-container": "#009db7", "on-tertiary": "#ffffff", "surface": "#f8f9ff", "secondary": "#0051d5", "on-primary-fixed": "#111c2d", "on-surface-variant": "#45474c", "surface-dim": "#cbdbf5", "error": "#ba1a1a", "surface-container-highest": "#d3e4fe", "on-secondary-container": "#fefcff", "on-secondary": "#ffffff", "tertiary": "#00171c", "secondary-fixed": "#dbe1ff", "inverse-on-surface": "#eaf1ff", "surface-container-lowest": "#ffffff", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#004e5c", "on-error-container": "#93000a", "secondary-container": "#316bf3", "primary-container": "#1e293b", "on-primary-container": "#8590a6", "surface-container": "#e5eeff", "secondary-fixed-dim": "#b4c5ff", "primary-fixed": "#d8e3fb" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "space-md": "0.875rem", "gutter": "1.25rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-lg": "1.25rem", "margin": "1.75rem" }, "fontFamily": { "body-lg": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "label-caps": ["Inter"], "headline-lg": ["Inter"], "label-numeric-sm": ["JetBrains Mono"], "label-numeric-lg": ["JetBrains Mono"], "label-numeric-md": ["JetBrains Mono"], "headline-sm": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"] }, "fontSize": { "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "400" }], "label-caps": ["0.6875rem", { "lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "700" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-numeric-sm": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "500" }], "label-numeric-lg": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-numeric-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "500" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-xl": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary shadow-xs"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none font-bold">EXPENSE CORE</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mt-1">EXPENDITURE SYSTEM V2.4</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs text-[10px] font-label-caps text-on-surface-variant/70 uppercase tracking-widest">Main Navigation</div><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-surface-container-low text-secondary font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><svg class="w-5 h-5 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect height="7" rx="1.5" stroke-width="1.75" width="7" x="3" y="3"></rect><rect height="7" rx="1.5" stroke-width="1.75" width="7" x="14" y="3"></rect><rect height="7" rx="1.5" stroke-width="1.75" width="7" x="14" y="14"></rect><rect height="7" rx="1.5" stroke-width="1.75" width="7" x="3" y="14"></rect></svg><span>Dashboard</span></a></nav></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs text-[10px] font-label-caps text-on-surface-variant/70 uppercase tracking-widest">Form Pengeluaran</div><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-surface-container-low text-secondary font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="form-pengeluaran" href="#"><svg class="w-5 h-5 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path></svg><span>Form Pengeluaran</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="jenis-pengeluaran" href="#"><svg class="w-5 h-5 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect height="18" rx="2" stroke-width="1.8" width="18" x="3" y="3"></rect><path d="M12 8v8m-4-4h8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg><span>Master Akun</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-surface-container-low text-secondary font-semibold rounded-lg shadow-sm" data-path="utang-usaha" href="#"><svg class="w-5 h-5 flex-shrink-0 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect height="14" rx="2" stroke-width="1.75" width="20" x="2" y="5"></rect><line stroke-width="1.75" x1="2" x2="22" y1="10" y2="10"></line><path d="M6 15h3m4 0h3" stroke-linecap="round" stroke-width="1.75"></path></svg><span>Utang Usaha</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="pembayaran-gaji" href="#"><svg class="w-5 h-5 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect height="12" rx="2" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="12" cy="12" r="2.5" stroke-width="1.8"></circle><line stroke-linecap="round" stroke-width="1.8" x1="6" x2="6.01" y1="12" y2="12"></line><line stroke-linecap="round" stroke-width="1.8" x1="18" x2="18.01" y1="12" y2="12"></line></svg><span>Pembayaran Gaji</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="pengeluaran-lainnya" href="#"><svg class="w-5 h-5 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-width="1.8"></circle><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg><span>Pengeluaran Lainnya</span></a></nav></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs text-[10px] font-label-caps text-on-surface-variant/70 uppercase tracking-widest">Pembukuan</div><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-surface-container-low text-secondary font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="pembukuan-pengeluaran" href="#"><svg class="w-5 h-5 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path></svg><span>Pengeluaran</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="kas" href="#"><svg class="w-5 h-5 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect height="18" rx="2" stroke-width="1.8" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="3.5" stroke-width="1.8"></circle><line stroke-linecap="round" stroke-width="1.8" x1="12" x2="12" y1="6" y2="8.5"></line><line stroke-linecap="round" stroke-width="1.8" x1="12" x2="12" y1="15.5" y2="18"></line><line stroke-linecap="round" stroke-width="1.8" x1="6" x2="8.5" y1="12" y2="12"></line><line stroke-linecap="round" stroke-width="1.8" x1="15.5" x2="18" y1="12" y2="12"></line></svg><span>Kas</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="jurnal-umum" href="#"><svg class="w-5 h-5 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path><line stroke-width="1.75" x1="12" x2="12" y1="6" y2="14"></line><line stroke-width="1.75" x1="8" x2="16" y1="9" y2="9"></line></svg><span>Jurnal Umum</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="buku-besar" href="#"><svg class="w-5 h-5 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path><path d="M8 4v16M16 4v16M4 10h16M4 15h16" stroke-linecap="round" stroke-width="1.5"></path></svg><span>Buku Besar</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="neraca-saldo" href="#"><svg class="w-5 h-5 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3v17M12 3L5 7m7-4l7 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path><path d="M2 13l3-6 3 6a3 3 0 01-6 0zm14 0l3-6 3 6a3 3 0 01-6 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path><path d="M8 21h8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path></svg><span>Neraca Saldo</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest"><div class="bg-surface-container-low rounded-lg p-space-sm mb-space-sm flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-caps text-label-caps text-on-surface font-semibold">LICENSED FY-2026</span></div><span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">v2.4.0</span></div><div class="flex flex-col gap-0.5"><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="bantuan" href="#"><span class="material-symbols-outlined text-[17px]">help</span><span>Bantuan</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg text-error font-body-sm text-body-sm hover:bg-error-container hover:text-on-error-container transition-colors" data-path="login" href="#" onclick="event.preventDefault(); openLogoutModal();"><span class="material-symbols-outlined text-[17px]">logout</span><span>Keluar</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-on-surface-variant text-[18px] pointer-events-none">location_on</span><select class="bg-surface-container-low font-body-sm text-body-sm text-on-surface pl-8 pr-7 py-1.5 rounded-lg outline-none cursor-pointer appearance-none"><option value="malang">Kantor Pusat - Malang</option><option value="surabaya">Cabang Surabaya</option><option value="jakarta">Cabang Jakarta</option></select><span class="material-symbols-outlined absolute right-2 text-on-surface-variant text-[16px] pointer-events-none">expand_more</span></div><div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-caps text-label-caps text-secondary-container font-semibold tracking-wide">SYNC REALTIME</span></div></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-left"><span class="font-body-md text-body-md font-semibold text-on-surface leading-snug">Arga Wicaksana, S.Ak</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-none">Finance Lead</span></div></div><button class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-error hover:text-on-error hover:bg-error transition-colors" onclick="openLogoutModal()" title="Keluar dari Sesi" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification System -->
+<div class="fixed top-20 right-8 z-50 flex items-center gap-space-sm px-space-md py-3 rounded-xl bg-primary text-on-primary shadow-xl transition-all duration-300 pointer-events-none translate-y-[-120%] opacity-0" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[20px]">check_circle</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[13px] font-semibold text-on-primary" id="toastTitle">Mengekspor Laporan</span>
+<span class="font-body-sm text-body-sm text-surface-container-high" id="toastMessage">File rekap utang dan aging schedule sedang diunduh dalam format Excel (.xlsx)...</span>
+</div>
+</div>
+<div class="p-margin flex flex-col gap-space-lg max-w-[1600px] mx-auto w-full">
+<!-- Breadcrumb & Top Level View Header -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+
+
+
+
+
+</div>
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md mt-1">
+<div class="flex flex-col max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">Pengelolaan Utang Usaha &amp; Pembayaran Pemasok</h1>
+
+</div>
+
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low font-body-md text-[13px] font-medium transition-colors shadow-sm" onclick="triggerExportNotice()" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Ekspor Aging</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container font-body-md text-[13px] font-semibold transition-colors shadow-sm" onclick="openCreateModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Tambah Utang Usaha</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Metric Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-gutter">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">Total Utang Aktif</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-label-numeric-lg text-[22px] font-bold text-primary tracking-tight" id="kpiTotalUtang">Rp 84.600.000</div>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">8 Rekanan Pemasok Aktif</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary opacity-60"></div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">Sudah Dibayar (Jan 2026)</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-label-numeric-lg text-[22px] font-bold text-on-surface tracking-tight" id="kpiSudahDibayar">Rp 52.400.000</div>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="font-label-numeric-sm text-label-numeric-sm text-secondary font-semibold">61.9%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Realisasi termin berjalan</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary-container opacity-60"></div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">Sisa Menunggu Pembayaran</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-label-numeric-lg text-[22px] font-bold text-primary tracking-tight" id="kpiSisaUtang">Rp 32.200.000</div>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface text-[10px] font-semibold">4 Tagihan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Menunggu verifikasi kasir</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-outline-variant opacity-60"></div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-error tracking-wider uppercase font-bold">Jatuh Tempo Minggu Ini</span>
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-label-numeric-lg text-[22px] font-bold text-error tracking-tight">Rp 36.400.000</div>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-body-sm text-body-sm text-error font-medium">Status Prioritas Mendesak</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-error opacity-70"></div>
+</div>
+</div>
+<!-- Quick Payment Connection Bar (Interactive Feature Panel) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+
+
+</div>
+
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="bg-surface-container-low px-3 py-1.5 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">account_balance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Kas Utama BCA:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-bold text-primary">Rp 920.450.000</span>
+</div>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-body-sm text-[13px] font-semibold transition-colors flex items-center gap-1.5" onclick="openPaymentModal()" type="button">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span>Buka Jalur Pembayaran Cepat</span>
+</button>
+</div>
+</div>
+<!-- Filter & Toolbar Controls -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Search Field -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant text-body-sm font-body-sm pl-9 pr-4 py-2 rounded-lg focus:outline-none focus:bg-surface-container-lowest transition-colors" id="searchInput" oninput="applyFilterTable()" placeholder="Cari No. Utang, Nama Pemasok, atau Keterangan Pembelian..." type="text">
+</div>
+<!-- Segmented Status Tabs -->
+
+<!-- Secondary Filters Dropdown -->
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<select class="bg-surface-container-low text-body-sm font-body-sm text-on-surface pl-3 pr-8 py-2 rounded-lg outline-none cursor-pointer appearance-none" id="tempoFilter" onchange="applyFilterTable()">
+<option value="ALL">Semua Jatuh Tempo</option>
+<option value="URGENT">Jatuh Tempo Minggu Ini</option>
+<option value="MONTH">Jatuh Tempo Bulan Ini</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-on-surface-variant text-[16px] pointer-events-none">expand_more</span>
+</div>
+<div class="relative">
+<select class="bg-surface-container-low text-body-sm font-body-sm text-on-surface pl-3 pr-8 py-2 rounded-lg outline-none cursor-pointer appearance-none" id="sortFilter" onchange="applyFilterTable()">
+<option value="NEWEST">Terbaru → Terlama</option>
+<option value="OLDEST">Terlama → Terbaru</option>
+<option value="HIGHEST">Sisa Utang Terbesar</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-on-surface-variant text-[16px] pointer-events-none">sort</span>
+</div>
+</div>
+</div>
+<!-- Main Data Table: Daftar Utang Usaha -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="utangTable">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant text-label-caps font-label-caps tracking-wider uppercase"><th class="py-3 px-4 font-bold">No. Utang</th>
+<th class="py-3 px-4 font-bold">Tgl. Transaksi</th>
+<th class="py-3 px-4 font-bold min-w-[200px]">Pemasok &amp; Keterangan</th>
+<th class="py-3 px-4 text-right font-bold">Total Utang</th>
+<th class="py-3 px-4 text-right font-bold">Sudah Dibayar</th>
+<th class="py-3 px-4 text-right font-bold text-primary">Sisa Utang</th>
+<th class="py-3 px-4 font-bold">Jatuh Tempo</th>
+<th class="py-3 px-4 text-center font-bold">Aksi</th></tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm" id="tableBody">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-dibayar="0" data-id="UTG-2026-0042" data-sisa="33750000" data-status="Belum Dibayar" data-tempo="URGENT" data-total="33750000" data-vendor="PT Sinar Tekstil Jaya"><td class="py-3.5 px-4 font-label-numeric-sm text-secondary font-semibold">
+<span class="cursor-pointer hover:underline" onclick="openDetailModal('UTG-2026-0042')">UTG-2026-0042</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">26 Jan 2026</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-semibold">PT Sinar Tekstil Jaya</span>
+<span class="font-body-sm text-on-surface-variant truncate max-w-xs">Pembelian Kain Batik Sutra &amp; Primissima 250m</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-on-surface">Rp 33.750.000</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-on-surface-variant">Rp 0</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-primary font-bold">Rp 33.750.000</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-on-surface">05 Feb 2026</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary text-[10px] font-bold">H-10</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container text-body-sm font-semibold transition-colors shadow-xs" onclick="triggerQuickPay('UTG-2026-0042', 'PT Sinar Tekstil Jaya', 33750000)" type="button">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span>Bayar</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="openHistoryDrawer('UTG-2026-0042')" title="Riwayat Pembayaran" type="button">
+<span class="material-symbols-outlined text-[16px]">history</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="editRow('UTG-2026-0042')" title="Edit Data" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1.5 rounded bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-colors" onclick="deleteRow(this, 'UTG-2026-0042', false)" title="Hapus" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td></tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group bg-surface-container-lowest" data-dibayar="16400000" data-id="UTG-2026-0041" data-sisa="20000000" data-status="Dibayar Sebagian" data-tempo="URGENT" data-total="36400000" data-vendor="PT Graha Sarana Distribusi"><td class="py-3.5 px-4 font-label-numeric-sm text-secondary font-semibold">
+<span class="cursor-pointer hover:underline" onclick="openDetailModal('UTG-2026-0041')">UTG-2026-0041</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">20 Jan 2026</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-semibold">PT Graha Sarana Distribusi</span>
+<span class="font-body-sm text-on-surface-variant truncate max-w-xs">Pengadaan armada box logistik cabang Malang</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-on-surface">Rp 36.400.000</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-secondary font-medium">Rp 16.400.000</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-error font-bold">Rp 20.000.000</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-error font-semibold">28 Jan 2026</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-error text-[10px] font-bold animate-pulse">H-2 Jatuh Tempo</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container text-body-sm font-semibold transition-colors shadow-xs" onclick="triggerQuickPay('UTG-2026-0041', 'PT Graha Sarana Distribusi', 20000000)" type="button">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span>Bayar</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="openHistoryDrawer('UTG-2026-0041')" title="Riwayat Pembayaran" type="button">
+<span class="material-symbols-outlined text-[16px]">history</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="editRow('UTG-2026-0041')" title="Edit Data" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container text-outline cursor-not-allowed opacity-50" onclick="deleteRow(this, 'UTG-2026-0041', true)" title="Hapus Dibatasi (Ada Termin)" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td></tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-dibayar="4275000" data-id="UTG-2026-0039" data-sisa="0" data-status="Lunas" data-tempo="PAST" data-total="4275000" data-vendor="CV Warna Prima Chem"><td class="py-3.5 px-4 font-label-numeric-sm text-secondary font-semibold">
+<span class="cursor-pointer hover:underline" onclick="openDetailModal('UTG-2026-0039')">UTG-2026-0039</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">15 Jan 2026</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-semibold">CV Warna Prima Chem</span>
+<span class="font-body-sm text-on-surface-variant truncate max-w-xs">Pembelian Pewarna Kain Tekstil Remazol &amp; Indigosol 45kg</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-on-surface">Rp 4.275.000</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-secondary font-medium">Rp 4.275.000</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-on-surface-variant">Rp 0</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-on-surface-variant">25 Jan 2026</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary hover:bg-surface-container text-body-sm font-semibold transition-colors" onclick="openHistoryDrawer('UTG-2026-0039')" title="Lihat Rincian Lunas" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Rincian</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="editRow('UTG-2026-0039')" title="Edit Data" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container text-outline cursor-not-allowed opacity-50" onclick="deleteRow(this, 'UTG-2026-0039', true)" title="Hapus Terkunci" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td></tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group bg-surface-container-lowest" data-dibayar="24100000" data-id="UTG-2026-0038" data-sisa="24100000" data-status="Dibayar Sebagian" data-tempo="URGENT" data-total="48200000" data-vendor="PT Aneka Logistik Sejahtera"><td class="py-3.5 px-4 font-label-numeric-sm text-secondary font-semibold">
+<span class="cursor-pointer hover:underline" onclick="openDetailModal('UTG-2026-0038')">UTG-2026-0038</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">12 Jan 2026</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-semibold">PT Aneka Logistik Sejahtera</span>
+<span class="font-body-sm text-on-surface-variant truncate max-w-xs">Ongkos Ekspedisi &amp; Material Baja Ringan Gudang</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-on-surface">Rp 48.200.000</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-secondary font-medium">Rp 24.100.000</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-primary font-bold">Rp 24.100.000</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-on-surface">02 Feb 2026</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary text-[10px] font-bold">H-7</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container text-body-sm font-semibold transition-colors shadow-xs" onclick="triggerQuickPay('UTG-2026-0038', 'PT Aneka Logistik Sejahtera', 24100000)" type="button">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span>Bayar</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="openHistoryDrawer('UTG-2026-0038')" title="Riwayat Pembayaran" type="button">
+<span class="material-symbols-outlined text-[16px]">history</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="editRow('UTG-2026-0038')" title="Edit Data" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container text-outline cursor-not-allowed opacity-50" onclick="deleteRow(this, 'UTG-2026-0038', true)" title="Hapus Terkunci" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td></tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-dibayar="6850000" data-id="UTG-2026-0037" data-sisa="0" data-status="Lunas" data-tempo="PAST" data-total="6850000" data-vendor="Toko Display Ritelindo"><td class="py-3.5 px-4 font-label-numeric-sm text-secondary font-semibold">
+<span class="cursor-pointer hover:underline" onclick="openDetailModal('UTG-2026-0037')">UTG-2026-0037</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">08 Jan 2026</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-semibold">Toko Display Ritelindo</span>
+<span class="font-body-sm text-on-surface-variant truncate max-w-xs">Pengadaan Gantungan Baju Kayu &amp; Rak Display Toko Surabaya</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-on-surface">Rp 6.850.000</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-secondary font-medium">Rp 6.850.000</td>
+<td class="py-3.5 px-4 text-right font-label-numeric-sm text-on-surface-variant">Rp 0</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-on-surface-variant">22 Jan 2026</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary hover:bg-surface-container text-body-sm font-semibold transition-colors" onclick="openHistoryDrawer('UTG-2026-0037')" title="Lihat Rincian Lunas" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Rincian</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="editRow('UTG-2026-0037')" title="Edit Data" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container text-outline cursor-not-allowed opacity-50" onclick="deleteRow(this, 'UTG-2026-0037', true)" title="Hapus Terkunci" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Row Summary Footer -->
+<div class="bg-surface-container-lowest px-space-md py-3 flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Menampilkan</span>
+<span class="font-label-numeric-sm text-label-numeric-sm font-semibold text-primary" id="rowCountText">5 dari 5 data utang</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low" type="button">
+<span class="material-symbols-outlined text-[18px]">first_page</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-secondary text-on-secondary font-label-numeric-sm text-body-sm font-semibold" type="button">1</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low font-label-numeric-sm text-body-sm" type="button">2</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low" type="button">
+<span class="material-symbols-outlined text-[18px]">last_page</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: Pencatatan Pembayaran Utang (Integrated Quick Pay) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/40 backdrop-blur-xs hidden" id="paymentModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-xl overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">price_check</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Pencatatan Pembayaran Utang</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kurangi Saldo Kas &amp; Perbarui Sisa Utang Secara Real-time</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="closePaymentModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<form class="p-space-lg flex flex-col gap-space-md" id="paymentForm" onsubmit="handlePaymentSubmit(event)">
+<!-- Select Target Debt -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Pilih Tagihan / Nomor Utang</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low font-body-md text-body-md text-on-surface px-3 py-2 rounded-lg outline-none cursor-pointer appearance-none" id="modalSelectUtang" onchange="updateModalDebtInfo()" required="">
+<option data-sisa="20000000" data-vendor="PT Graha Sarana Distribusi" value="UTG-2026-0041">UTG-2026-0041 - PT Graha Sarana Distribusi (Sisa: Rp 20.000.000)</option>
+<option data-sisa="33750000" data-vendor="PT Sinar Tekstil Jaya" value="UTG-2026-0042">UTG-2026-0042 - PT Sinar Tekstil Jaya (Sisa: Rp 33.750.000)</option>
+<option data-sisa="24100000" data-vendor="PT Aneka Logistik Sejahtera" value="UTG-2026-0038">UTG-2026-0038 - PT Aneka Logistik Sejahtera (Sisa: Rp 24.100.000)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Sumber Akun Kas -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Sumber Kas Pengurang</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low font-body-md text-body-md text-on-surface px-3 py-2 rounded-lg outline-none cursor-pointer appearance-none" id="modalSumberKas" required="">
+<option value="BCA_OPR">1-1001 BCA Operasional (Saldo: Rp 920,4M)</option>
+<option value="MANDIRI">1-1002 Mandiri Giro Utama (Saldo: Rp 450,0M)</option>
+<option value="KAS_KECIL">1-1000 Kas Kecil Tunai (Saldo: Rp 18,5M)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Tanggal Pembayaran -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Tanggal Pembayaran</label>
+<input class="bg-surface-container-low font-body-md text-body-md text-on-surface px-3 py-2 rounded-lg outline-none" required="" type="date" value="2026-01-26">
+</div>
+</div>
+<!-- Nominal Input with Prefix -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Jumlah Pembayaran Termin</label>
+<span class="font-body-sm text-[11px] text-secondary font-semibold cursor-pointer" onclick="setFullPayAmount()">Bayar Sesuai Sisa Tagihan</span>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-lg overflow-hidden">
+<span class="px-3.5 py-2 font-label-numeric-sm text-on-surface-variant bg-surface-container font-semibold">Rp</span>
+<input class="w-full bg-transparent px-3 py-2 font-label-numeric-md text-label-numeric-md text-primary font-bold focus:outline-none" id="modalPaymentAmount" min="1000" placeholder="0" required="" type="number" value="20000000">
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant px-1">
+<span>Sisa Tagihan Sekarang: <strong class="text-primary font-bold" id="modalLabelSisaTagihan">Rp 20.000.000</strong></span>
+<span>Ref. Otomatis: <code class="text-secondary font-mono">BKK-2026-0182</code></span>
+</div>
+</div>
+<!-- Catatan & Bukti -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Metode / No. Ref Transfer</label>
+<input class="bg-surface-container-low font-body-md text-body-md text-on-surface px-3 py-2 rounded-lg outline-none" placeholder="BCA VA / TRX-891823" type="text" value="TRX-BCA-89211">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Catatan Termin</label>
+<input class="bg-surface-container-low font-body-md text-body-md text-on-surface px-3 py-2 rounded-lg outline-none" placeholder="Pelunasan termin 2 armada" type="text" value="Pelunasan sisa invoice armada logistik">
+</div>
+</div>
+<!-- Sync Preview Alert -->
+<div class="bg-surface-container-low p-3 rounded-lg flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">verified_user</span>
+<div class="flex flex-col text-[12px] text-on-surface-variant leading-relaxed">
+<span class="font-semibold text-primary">Jurnal Pengeluaran Otomatis Dibuat:</span>
+<span>(D) 2-1100 Utang Usaha &nbsp;|&nbsp; (K) 1-1001 Kas/Bank BCA Operasional</span>
+</div>
+</div>
+<!-- Modal Actions -->
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-variant font-body-md text-body-md font-medium transition-colors" onclick="closePaymentModal()" type="button">
+            Batal
+          </button>
+<button class="px-5 py-2 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container font-body-md text-body-md font-semibold transition-colors shadow-sm flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Konfirmasi Pembayaran</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL: Tambah Utang Usaha Baru -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/40 backdrop-blur-xs hidden" id="createModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-2xl overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-200">
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">post_add</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Tambah Tagihan Utang Usaha Baru</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pencatatan faktur pembelian tempo/termin dari rekanan</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="closeCreateModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="p-space-lg flex flex-col gap-space-md" id="createForm" onsubmit="handleCreateUtang(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Nomor Utang / Referensi</label>
+<input class="bg-surface-container font-label-numeric-sm text-label-numeric-sm text-on-surface px-3 py-2 rounded-lg outline-none cursor-not-allowed" id="newNomorUtang" readonly="" type="text" value="UTG-2026-0043">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Tanggal Faktur / Pembelian</label>
+<input class="bg-surface-container-low font-body-md text-body-md text-on-surface px-3 py-2 rounded-lg outline-none" id="newTanggal" required="" type="date" value="2026-01-26">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Nama Pemasok / Vendor</label>
+<input class="bg-surface-container-low font-body-md text-body-md text-on-surface px-3 py-2 rounded-lg outline-none" id="newVendor" placeholder="Contoh: CV Tekstil Jaya Mandiri" required="" type="text">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Batas Jatuh Tempo</label>
+<input class="bg-surface-container-low font-body-md text-body-md text-on-surface px-3 py-2 rounded-lg outline-none" id="newJatuhTempo" required="" type="date" value="2026-02-15">
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Keterangan / Deskripsi Pembelian</label>
+<input class="bg-surface-container-low font-body-md text-body-md text-on-surface px-3 py-2 rounded-lg outline-none" id="newKeterangan" placeholder="Pengadaan 100 rol kain katun jepang grade A" required="" type="text">
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Total Nilai Tagihan (Rp)</label>
+<input class="bg-surface-container-low font-label-numeric-md text-label-numeric-md font-bold text-primary px-3 py-2 rounded-lg outline-none" id="newTotal" min="10000" placeholder="15000000" required="" type="number">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">Uang Muka / Pembayaran Awal (Rp)</label>
+<input class="bg-surface-container-low font-label-numeric-md text-label-numeric-md text-on-surface px-3 py-2 rounded-lg outline-none" id="newDP" min="0" placeholder="0" type="number" value="0">
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-body-md text-body-md font-medium transition-colors" onclick="closeCreateModal()" type="button">
+            Batal
+          </button>
+<button class="px-5 py-2 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container font-body-md text-body-md font-semibold transition-colors shadow-sm flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Simpan Utang Usaha</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- DRAWER: Riwayat Pembayaran & Bukti Kas Keluar -->
+<div class="fixed inset-0 z-50 overflow-hidden hidden" id="historyDrawer">
+<div class="absolute inset-0 bg-primary/30 backdrop-blur-xs transition-opacity" onclick="closeHistoryDrawer()"></div>
+<div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+<div class="w-screen max-w-md bg-surface-container-lowest shadow-2xl flex flex-col">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">history</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary" id="drawerTitle">Riwayat Termin Utang</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="drawerSubtitle">Histori pembayaran &amp; bukti pengeluaran kas</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container" onclick="closeHistoryDrawer()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Content Body -->
+<div class="p-space-lg flex-1 overflow-y-auto flex flex-col gap-space-md" id="drawerContent">
+<!-- Populated via Javascript -->
+</div>
+<!-- Drawer Footer -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Terverifikasi Bag. Keuangan</span>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold" onclick="closeHistoryDrawer()" type="button">Tutup</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // In-memory payment logs for demonstration
+    const paymentHistories = {
+      'UTG-2026-0041': [
+        { date: '21 Jan 2026', bkk: 'BKK-2026-0145', nominal: 16400000, source: 'BCA Giro Opr', balanceAfter: 20000000, admin: 'Arga Wicaksana, S.Ak', note: 'DP Termin 1 (45%) Armada Box' }
+      ],
+      'UTG-2026-0039': [
+        { date: '18 Jan 2026', bkk: 'BKK-2026-0120', nominal: 4275000, source: 'Kas Kecil Tunai', balanceAfter: 0, admin: 'Rani K., A.Md', note: 'Pelunasan Bahan Kimia Pewarna' }
+      ],
+      'UTG-2026-0038': [
+        { date: '15 Jan 2026', bkk: 'BKK-2026-0111', nominal: 24100000, source: 'Mandiri Utama', balanceAfter: 24100000, admin: 'Arga Wicaksana, S.Ak', note: 'Termin 1 Logistik Proyek' }
+      ],
+      'UTG-2026-0037': [
+        { date: '10 Jan 2026', bkk: 'BKK-2026-0084', nominal: 6850000, source: 'BCA Giro Opr', balanceAfter: 0, admin: 'Arga Wicaksana, S.Ak', note: 'Pelunasan Display Ritelindo' }
+      ],
+      'UTG-2026-0042': []
+    };
+
+    let activeStatusFilter = 'ALL';
+
+    function showToast(title, message) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMessage').textContent = message;
+      toast.classList.remove('translate-y-[-120%]', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-[-120%]', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    function setStatusFilter(status, btnElement) {
+      activeStatusFilter = status;
+      document.querySelectorAll('.status-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+        btn.classList.add('text-on-surface-variant');
+      });
+      btnElement.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+      btnElement.classList.remove('text-on-surface-variant');
+      applyFilterTable();
+    }
+
+    function applyFilterTable() {
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      const tempo = document.getElementById('tempoFilter').value;
+      const rows = document.querySelectorAll('#tableBody tr');
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const rowStatus = row.getAttribute('data-status');
+        const rowTempo = row.getAttribute('data-tempo');
+        const textContent = row.textContent.toLowerCase();
+
+        const matchSearch = textContent.includes(search);
+        const matchStatus = (activeStatusFilter === 'ALL') || (rowStatus === activeStatusFilter);
+        const matchTempo = (tempo === 'ALL') || (rowTempo === tempo);
+
+        if (matchSearch && matchStatus && matchTempo) {
+          row.style.display = '';
+          visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      document.getElementById('rowCountText').textContent = `${visibleCount} dari ${rows.length} data utang`;
+    }
+
+    function openPaymentModal() {
+      document.getElementById('paymentModal').classList.remove('hidden');
+      updateModalDebtInfo();
+    }
+
+    function closePaymentModal() {
+      document.getElementById('paymentModal').classList.add('hidden');
+    }
+
+    function openCreateModal() {
+      document.getElementById('createModal').classList.remove('hidden');
+    }
+
+    function closeCreateModal() {
+      document.getElementById('createModal').classList.add('hidden');
+    }
+
+    function updateModalDebtInfo() {
+      const select = document.getElementById('modalSelectUtang');
+      const selectedOption = select.options[select.selectedIndex];
+      const sisa = parseInt(selectedOption.getAttribute('data-sisa')) || 0;
+      document.getElementById('modalLabelSisaTagihan').textContent = 'Rp ' + sisa.toLocaleString('id-ID');
+      document.getElementById('modalPaymentAmount').value = sisa;
+    }
+
+    function setFullPayAmount() {
+      const select = document.getElementById('modalSelectUtang');
+      const selectedOption = select.options[select.selectedIndex];
+      const sisa = parseInt(selectedOption.getAttribute('data-sisa')) || 0;
+      document.getElementById('modalPaymentAmount').value = sisa;
+    }
+
+    function triggerQuickPay(utangId, vendorName, sisaNominal) {
+      const select = document.getElementById('modalSelectUtang');
+      let found = false;
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].value === utangId) {
+          select.selectedIndex = i;
+          found = true;
+          break;
+        }
+      }
+      if (!found) {
+        const newOpt = document.createElement('option');
+        newOpt.value = utangId;
+        newOpt.setAttribute('data-sisa', sisaNominal);
+        newOpt.setAttribute('data-vendor', vendorName);
+        newOpt.textContent = `${utangId} - ${vendorName} (Sisa: Rp ${sisaNominal.toLocaleString('id-ID')})`;
+        select.appendChild(newOpt);
+        select.selectedIndex = select.options.length - 1;
+      }
+      openPaymentModal();
+    }
+
+    function handlePaymentSubmit(e) {
+      e.preventDefault();
+      const utangId = document.getElementById('modalSelectUtang').value;
+      const amount = parseInt(document.getElementById('modalPaymentAmount').value) || 0;
+
+      // Find Row in Table
+      const targetRow = document.querySelector(`tr[data-id="${utangId}"]`);
+      if (targetRow) {
+        const currentSisa = parseInt(targetRow.getAttribute('data-sisa'));
+        const currentTotal = parseInt(targetRow.getAttribute('data-total'));
+        const currentDibayar = parseInt(targetRow.getAttribute('data-dibayar'));
+
+        const newSisa = Math.max(0, currentSisa - amount);
+        const newDibayar = currentDibayar + amount;
+
+        targetRow.setAttribute('data-sisa', newSisa);
+        targetRow.setAttribute('data-dibayar', newDibayar);
+
+        // Update columns
+        targetRow.children[4].textContent = 'Rp ' + newDibayar.toLocaleString('id-ID');
+        targetRow.children[5].textContent = 'Rp ' + newSisa.toLocaleString('id-ID');
+
+        // Status update
+        if (newSisa === 0) {
+          targetRow.setAttribute('data-status', 'Lunas');
+          targetRow.children[7].innerHTML = `
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary text-[11px] font-semibold">
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Lunas
+            </span>
+          `;
+        } else {
+          targetRow.setAttribute('data-status', 'Dibayar Sebagian');
+          targetRow.children[7].innerHTML = `
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface text-[11px] font-semibold">
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+              Dibayar Sebagian
+            </span>
+          `;
+        }
+
+        // Add history log
+        if (!paymentHistories[utangId]) paymentHistories[utangId] = [];
+        paymentHistories[utangId].unshift({
+          date: '26 Jan 2026',
+          bkk: 'BKK-2026-0182',
+          nominal: amount,
+          source: 'BCA Operasional',
+          balanceAfter: newSisa,
+          admin: 'Arga Wicaksana, S.Ak',
+          note: 'Pencatatan real-time kasir'
+        });
+      }
+
+      closePaymentModal();
+      showToast('Pembayaran Disimpan', `Tagihan ${utangId} berhasil dibayarkan Rp ${amount.toLocaleString('id-ID')}. Saldo kas diperbarui.`);
+      applyFilterTable();
+    }
+
+    function handleCreateUtang(e) {
+      e.preventDefault();
+      const no = document.getElementById('newNomorUtang').value;
+      const vendor = document.getElementById('newVendor').value;
+      const tgl = document.getElementById('newTanggal').value;
+      const jatuhTempo = document.getElementById('newJatuhTempo').value;
+      const ket = document.getElementById('newKeterangan').value;
+      const total = parseInt(document.getElementById('newTotal').value) || 0;
+      const dp = parseInt(document.getElementById('newDP').value) || 0;
+      const sisa = total - dp;
+      const status = dp === 0 ? 'Belum Dibayar' : (sisa === 0 ? 'Lunas' : 'Dibayar Sebagian');
+
+      const tbody = document.getElementById('tableBody');
+      const newTr = document.createElement('tr');
+      newTr.className = 'hover:bg-surface-container-low/60 transition-colors group';
+      newTr.setAttribute('data-status', status);
+      newTr.setAttribute('data-tempo', 'MONTH');
+      newTr.setAttribute('data-id', no);
+      newTr.setAttribute('data-vendor', vendor);
+      newTr.setAttribute('data-sisa', sisa);
+      newTr.setAttribute('data-total', total);
+      newTr.setAttribute('data-dibayar', dp);
+
+      newTr.innerHTML = `
+        <td class="py-3.5 px-4 font-label-numeric-sm text-secondary font-semibold">
+          <span class="cursor-pointer hover:underline" onclick="openDetailModal('${no}')">${no}</span>
+        </td>
+        <td class="py-3.5 px-4 text-on-surface-variant">${tgl}</td>
+        <td class="py-3.5 px-4">
+          <div class="flex flex-col">
+            <span class="font-body-md text-on-surface font-semibold">${vendor}</span>
+            <span class="font-body-sm text-on-surface-variant truncate max-w-xs">${ket}</span>
+          </div>
+        </td>
+        <td class="py-3.5 px-4 text-right font-label-numeric-sm text-on-surface">Rp ${total.toLocaleString('id-ID')}</td>
+        <td class="py-3.5 px-4 text-right font-label-numeric-sm text-on-surface-variant">Rp ${dp.toLocaleString('id-ID')}</td>
+        <td class="py-3.5 px-4 text-right font-label-numeric-sm text-primary font-bold">Rp ${sisa.toLocaleString('id-ID')}</td>
+        <td class="py-3.5 px-4">
+          <div class="flex items-center gap-1.5">
+            <span class="font-body-sm text-on-surface">${jatuhTempo}</span>
+            <span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary text-[10px] font-bold">Baru</span>
+          </div>
+        </td>
+        <td class="py-3.5 px-4 text-center">
+          <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full ${dp === 0 ? 'bg-error-container text-on-error-container' : 'bg-surface-container-high text-on-surface'} text-[11px] font-semibold">
+            <span class="w-1.5 h-1.5 rounded-full ${dp === 0 ? 'bg-error' : 'bg-secondary-container'}"></span>
+            ${status}
+          </span>
+        </td>
+        <td class="py-3.5 px-4">
+          <div class="flex items-center justify-center gap-1">
+            <button type="button" onclick="triggerQuickPay('${no}', '${vendor}', ${sisa})" class="p-1.5 rounded bg-secondary text-on-secondary hover:bg-secondary-container transition-colors shadow-xs">
+              <span class="material-symbols-outlined text-[16px]">payments</span>
+            </button>
+            <button type="button" onclick="openHistoryDrawer('${no}')" class="p-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+              <span class="material-symbols-outlined text-[16px]">history</span>
+            </button>
+            <button type="button" onclick="editRow('${no}')" class="p-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+              <span class="material-symbols-outlined text-[16px]">edit</span>
+            </button>
+            <button type="button" onclick="deleteRow(this, '${no}', false)" class="p-1.5 rounded bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-colors">
+              <span class="material-symbols-outlined text-[16px]">delete</span>
+            </button>
+          </div>
+        </td>
+      `;
+
+      tbody.insertBefore(newTr, tbody.firstChild);
+      paymentHistories[no] = dp > 0 ? [{
+        date: tgl,
+        bkk: 'BKK-2026-0099',
+        nominal: dp,
+        source: 'Kas Operasional',
+        balanceAfter: sisa,
+        admin: 'Arga Wicaksana, S.Ak',
+        note: 'Uang Muka / Pembayaran Pertama'
+      }] : [];
+
+      closeCreateModal();
+      showToast('Utang Terdaftar', `Nomor ${no} untuk ${vendor} berhasil ditambahkan ke pembukuan.`);
+      applyFilterTable();
+    }
+
+    function openHistoryDrawer(utangId) {
+      const historyList = paymentHistories[utangId] || [];
+      const drawer = document.getElementById('historyDrawer');
+      const content = document.getElementById('drawerContent');
+      document.getElementById('drawerTitle').textContent = `Riwayat Kas: ${utangId}`;
+      
+      if (historyList.length === 0) {
+        content.innerHTML = `
+          <div class="p-8 text-center flex flex-col items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-outline-variant text-[44px]">receipt_long</span>
+            <span class="font-headline-sm text-headline-sm text-on-surface-variant">Belum Ada Pembayaran Termin</span>
+            <p class="font-body-sm text-body-sm text-outline">Tagihan ini belum memiliki rekam jejak pengeluaran kas atau termin keluar.</p>
+          </div>
+        `;
+      } else {
+        let html = '<div class="flex flex-col gap-3">';
+        historyList.forEach((item, index) => {
+          html += `
+            <div class="bg-surface-container-low p-3.5 rounded-lg flex flex-col gap-2 relative">
+              <div class="flex items-center justify-between">
+                <span class="font-label-numeric-sm text-label-numeric-sm font-bold text-secondary">${item.bkk}</span>
+                <span class="font-body-sm text-[11px] text-on-surface-variant">${item.date}</span>
+              </div>
+              <div class="flex items-baseline justify-between">
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Dibayarkan:</span>
+                <span class="font-label-numeric-md text-label-numeric-md font-bold text-primary">Rp ${item.nominal.toLocaleString('id-ID')}</span>
+              </div>
+              <div class="text-[12px] text-on-surface-variant flex flex-col gap-0.5">
+                <div>Sumber: <strong class="text-on-surface">${item.source}</strong></div>
+                <div>Sisa Setelah Bayar: <span class="font-label-numeric-sm text-on-surface font-semibold">Rp ${item.balanceAfter.toLocaleString('id-ID')}</span></div>
+                <div>Otorisasi: <span class="text-on-surface">${item.admin}</span></div>
+                <div class="italic text-[11px] mt-1 text-outline">"${item.note}"</div>
+              </div>
+            </div>
+          `;
+        });
+        html += '</div>';
+        content.innerHTML = html;
+      }
+
+      drawer.classList.remove('hidden');
+    }
+
+    function closeHistoryDrawer() {
+      document.getElementById('historyDrawer').classList.add('hidden');
+    }
+
+    function deleteRow(btn, utangId, hasPayment) {
+      if (hasPayment) {
+        alert(`Utang ${utangId} tidak dapat dihapus karena sudah memiliki riwayat termin kas keluar. Lakukan pembatalan transaksi melalui modul jurnal umum terlebih dahulu.`);
+        return;
+      }
+      if (confirm(`Apakah Anda yakin ingin membatalkan & menghapus data utang ${utangId}? Tindakan ini tidak dapat dibatalkan.`)) {
+        const row = btn.closest('tr');
+        row.remove();
+        showToast('Data Dihapus', `Data utang usaha ${utangId} berhasil dihapus.`);
+        applyFilterTable();
+      }
+    }
+
+    function editRow(utangId) {
+      showToast('Mode Edit', `Memuat formulir koreksi dokumen ${utangId}`);
+    }
+
+    function openDetailModal(utangId) {
+      openHistoryDrawer(utangId);
+    }
+
+    function triggerExportNotice() {
+      showToast('Mengekspor Laporan', 'File rekap utang dan aging schedule sedang diunduh dalam format Excel (.xlsx)...');
+    }
+  </script>
+</div></main></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/40 backdrop-blur-xs hidden" id="logoutModal"><div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-md overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-200"><div class="p-space-lg flex flex-col items-center text-center gap-space-sm"><div class="w-12 h-12 rounded-full bg-error-container text-error flex items-center justify-center"><span class="material-symbols-outlined text-[28px]">logout</span></div><h3 class="font-headline-sm text-headline-sm font-bold text-primary mt-1">Konfirmasi Keluar Sesi</h3><p class="font-body-md text-body-md text-on-surface-variant">Apakah Anda yakin ingin mengakhiri sesi kerja Arga Wicaksana (Finance Lead)? Semua perubahan yang tersimpan tetap aman.</p></div><div class="px-space-lg pb-space-lg flex items-center justify-center gap-space-sm"><button class="flex-1 px-4 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-variant font-body-md text-body-md font-medium transition-colors" onclick="closeLogoutModal()" type="button">Batal</button><a class="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-error text-on-error hover:bg-error/90 font-body-md text-body-md font-semibold transition-colors shadow-sm" href="#" onclick="proceedLogout()"><span>Keluar &amp; Ke Login Multi-Role</span></a></div></div></div><script>function openLogoutModal(){const modal=document.getElementById('logoutModal');if(modal)modal.classList.remove('hidden');}function closeLogoutModal(){const modal=document.getElementById('logoutModal');if(modal)modal.classList.add('hidden');}function proceedLogout(){closeLogoutModal();if(typeof showToast==='function'){showToast('Keluar Berhasil','Mengarahkan ke halaman login...');}setTimeout(()=>{window.location.hash='#login';},500);}</script></body></html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#dbe1ff","surface-tint":"#545f73","error":"#ba1a1a","primary-container":"#1e293b","inverse-on-surface":"#eaf1ff","primary-fixed-dim":"#bcc7de","tertiary-fixed-dim":"#4cd7f6","outline-variant":"#c5c6cd","on-tertiary-fixed":"#001f26","on-primary-fixed-variant":"#3c475a","on-primary-fixed":"#111c2d","on-surface":"#0b1c30","surface-container-highest":"#d3e4fe","on-tertiary-fixed-variant":"#004e5c","outline":"#75777d","on-secondary-fixed-variant":"#003ea8","surface-bright":"#f8f9ff","on-primary-container":"#8590a6","on-error":"#ffffff","on-tertiary":"#ffffff","on-background":"#0b1c30","on-surface-variant":"#45474c","on-tertiary-container":"#009db7","inverse-surface":"#213145","tertiary-fixed":"#acedff","surface-container-lowest":"#ffffff","on-primary":"#ffffff","surface-container":"#e5eeff","on-secondary":"#ffffff","secondary-fixed-dim":"#b4c5ff","error-container":"#ffdad6","primary-fixed":"#d8e3fb","tertiary-container":"#002d36","on-secondary-container":"#fefcff","surface-variant":"#d3e4fe","surface-container-high":"#dce9ff","surface":"#f8f9ff","secondary":"#0051d5","inverse-primary":"#bcc7de","surface-container-low":"#eff4ff","secondary-container":"#316bf3","background":"#f8f9ff","surface-dim":"#cbdbf5","on-error-container":"#93000a","primary":"#091426","on-secondary-fixed":"#00174b","tertiary":"#00171c"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"1.75rem","space-xl":"2rem",gutter:"1.25rem","space-lg":"1.25rem","space-sm":"0.5rem","space-xs":"0.25rem","space-md":"0.875rem"},fontFamily:{"label-numeric-md":["JetBrains Mono"],"headline-lg":["Inter"],"body-sm":["Inter"],"headline-xl":["Inter"],"label-numeric-lg":["JetBrains Mono"],"headline-md":["Inter"],"label-numeric-sm":["JetBrains Mono"],"body-lg":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"label-caps":["Inter"]},fontSize:{"label-numeric-md":["0.875rem",{lineHeight:"1.25rem",fontWeight:"500"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.015em",fontWeight:"600"}],"body-sm":["0.75rem",{lineHeight:"1rem",fontWeight:"400"}],"headline-xl":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"700"}],"label-numeric-lg":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-md":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.01em",fontWeight:"600"}],"label-numeric-sm":["0.75rem",{lineHeight:"1rem",fontWeight:"500"}],"body-lg":["1rem",{lineHeight:"1.5rem",fontWeight:"400"}],"headline-sm":["1.125rem",{lineHeight:"1.5rem",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.25rem",fontWeight:"400"}],"label-caps":["0.6875rem",{lineHeight:"1rem",letterSpacing:"0.05em",fontWeight:"700"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col h-full"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest shrink-0"><div class="w-9 h-9 rounded bg-primary flex items-center justify-center text-on-primary font-headline-sm text-headline-sm shadow-sm">JB</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight font-bold font-serif">JAVA BATIK</span><span class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-wider">OWNER EXECUTIVE SUITE</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-md"><nav class="flex flex-col gap-space-lg" data-active-classes="bg-secondary-fixed text-on-secondary-fixed-variant font-bold rounded-lg"><div class="flex flex-col gap-space-xs"><div class="px-space-md py-space-xs font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider font-bold">1. UTAMA</div><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard-payroll" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">bar_chart</span><span class="font-body-md text-body-md">Dashboard Payroll</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard-expenditure" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">trending_up</span><span class="font-body-md text-body-md">Dashboard Expenditure</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pusat-approval" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">verified_user</span><span class="font-body-md text-body-md">Pusat Approval</span></div><span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-numeric-sm text-label-numeric-sm font-bold">3</span></a></div><div class="flex flex-col gap-space-xs"><div class="px-space-md py-space-xs font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider font-bold">2. PAYROLL HCM</div><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant font-bold shadow-sm transition-colors" data-path="data-gaji" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0 text-secondary">badge</span><span class="font-body-md text-body-md">Data Gaji</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pembayaran-gaji" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">payments</span><span class="font-body-md text-body-md">Pembayaran Gaji</span></div></a></div><div class="flex flex-col gap-space-xs"><div class="px-space-md py-space-xs font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider font-bold">3. PEMBUKUAN</div><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pengeluaran" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">receipt_long</span><span class="font-body-md text-body-md">Pengeluaran</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="kas" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">account_balance</span><span class="font-body-md text-body-md">Kas</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="jurnal-umum" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">menu_book</span><span class="font-body-md text-body-md">Jurnal Umum</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="buku-besar" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">auto_stories</span><span class="font-body-md text-body-md">Buku Besar</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="neraca-saldo" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 shrink-0">balance</span><span class="font-body-md text-body-md">Neraca Saldo</span></div></a></div></nav></div></div><div class="p-space-md border-t border-outline-variant/40 bg-surface-container-low/60 shrink-0"><div class="flex items-center gap-2"><div class="flex flex-col"></div></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="w-full h-16 px-space-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-md py-1.5 rounded-lg text-on-surface"><span class="material-symbols-outlined text-secondary text-[18px]">domain</span><select class="bg-transparent font-body-sm text-body-sm font-semibold text-on-surface outline-none cursor-pointer pr-space-xs"><option selected="" value="malang">Kantor Pusat - Malang</option><option value="surabaya">Cabang Surabaya</option><option value="jakarta">Cabang Jakarta</option></select></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-1.5 rounded-lg text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">calendar_month</span><span class="font-label-numeric-sm text-label-numeric-sm font-semibold text-on-surface">FY 2026 / Bulan Oktober 2026</span></div></div><div class="flex items-center gap-space-md"><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-headline-sm text-headline-sm text-primary leading-tight font-bold text-sm">Bapak H. Sudirman</span><span class="font-label-caps text-label-caps text-secondary font-bold uppercase">Owner / Direktur Utama</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 flex-1 bg-background px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Context Header & Actions -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Master Data Gaji Pokok</h1>
+</div>
+<div class="flex items-center gap-space-sm shrink-0"><button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-primary text-on-primary font-body-md text-body-md font-medium shadow-sm hover:bg-primary-container transition-colors" onclick="alert('Pengajuan skema skala upah telah berhasil dikirim ke Owner untuk otorisasi.')" type="button"><span class="material-symbols-outlined text-[1.125rem] text-secondary-fixed">send</span><span>Ajukan Approval ke Owner</span></button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md font-medium shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[1.125rem] text-secondary">file_download</span>
+<span>Ekspor Standar (XLS)</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-secondary text-on-secondary font-body-md text-body-md font-medium shadow-sm hover:bg-secondary-container transition-colors" onclick="openSalaryModal('create')" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">add_circle</span>
+<span>+ Tambah Skema Gaji</span>
+</button>
+</div>
+</div>
+<!-- Grade Tier Summary Strip (5 Grades Enterprise Distribution) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-outline-variant/40 mb-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary shrink-0"><span class="material-symbols-outlined text-[1.5rem]">verified_user</span></div><div><div class="flex items-center gap-2 mb-0.5"><span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-wider">Alur Otorisasi Skala Upah</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span class="px-2 py-0.5 rounded font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700 font-semibold">7 Disetujui • 1 Menunggu</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Status Approval Owner: Otorisasi Berjalan (Q4 2026)</h3></div></div><div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-2 rounded-lg"><div class="text-right"><div class="font-label-caps text-label-caps uppercase text-on-surface-variant">Approval Terakhir</div><div class="font-body-sm text-body-sm font-semibold text-on-surface">24 Okt 2026, 14:30 WIB</div></div><span class="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase font-bold">Owner: H. Sudirman</span></div></div>
+<!-- Master Data Table Section -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-lg">
+<!-- Table Header & Controls Bar -->
+<div class="p-space-md flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tabel Skema Gaji Aktif</span>
+<span class="px-2 py-0.5 rounded font-label-numeric-sm text-label-numeric-sm bg-surface-container-high text-on-surface font-semibold">8 Master ID</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[1.125rem]">filter_list</span>
+<select class="pl-9 pr-8 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface outline-none cursor-pointer" id="gradeFilter" onchange="filterGrades(this.value)">
+<option value="ALL">Semua Tingkatan Grade</option>
+<option value="Grade 1">Grade 1 (Eksekutif)</option>
+<option value="Grade 2">Grade 2 (Manajerial)</option>
+<option value="Grade 3">Grade 3 (Senior/Spesialis)</option>
+<option value="Grade 4">Grade 4 (Junior/Staff)</option>
+<option value="Grade 5">Grade 5 (Support)</option>
+<option value="Grade 4 (HR Staff)">Grade 4 (HR Staff)</option></select>
+</div>
+</div>
+</div>
+<!-- Data Grid Ledger -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider"><th class="py-3.5 px-space-md font-semibold">ID Gaji</th><th class="py-3.5 px-space-md font-semibold">JABATAN</th><th class="py-3.5 px-space-md font-semibold text-right">Gaji Pokok Standar</th><th class="py-3.5 px-space-md font-semibold">Keterangan Regulasi UMR 2026</th><th class="py-3.5 px-space-md font-semibold text-center">Status Approval Owner</th><th class="py-3.5 px-space-md font-semibold text-center w-36">Aksi</th></tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y-0" id="salaryTableBody"><!-- Row 1: GAJI-01 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-amount="22000000" data-grade="Grade 1" data-id="GAJI-01" data-notes="Standar gaji pokok General Manager / Direksi, penanggung jawab operasional penuh." data-role="General Manager">
+<td class="py-3.5 px-space-md font-label-numeric-md text-label-numeric-md font-semibold text-primary">GAJI-01</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface font-medium">General Manager</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-numeric-lg text-label-numeric-lg text-on-surface font-semibold">
+              Rp 10.000.000,00
+            </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                Di Atas Batas UMR (+334%)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700 font-semibold">6 Disetujui • 1 Menunggu</span></td><td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="viewDetail('GAJI-01')" title="Lihat Detail" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="editSalary('GAJI-01')" title="Edit Data Gaji" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">edit_square</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteSalary('GAJI-01')" title="Hapus Data" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: GAJI-02 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest" data-amount="15500000" data-grade="Grade 2" data-id="GAJI-02" data-notes="Standar gaji HR Manager, pimpinan departemen human capital." data-role="HR Manager">
+<td class="py-3.5 px-space-md font-label-numeric-md text-label-numeric-md font-semibold text-primary">GAJI-02</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface font-medium">HR Manager</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-numeric-lg text-label-numeric-lg text-on-surface font-semibold">
+              Rp 7.000.000,00
+            </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                Di Atas Batas UMR (+205%)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700 font-semibold">6 Disetujui • 1 Menunggu</span></td><td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="viewDetail('GAJI-02')" title="Lihat Detail" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="editSalary('GAJI-02')" title="Edit Data Gaji" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">edit_square</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteSalary('GAJI-02')" title="Hapus Data" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: GAJI-03 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-amount="8000000" data-grade="Grade 3" data-id="GAJI-03" data-notes="Standar gaji Programmer / Software Engineer, spesialis IT core system." data-role="Programmer Manager">
+<td class="py-3.5 px-space-md font-label-numeric-md text-label-numeric-md font-semibold text-primary">GAJI-03</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface font-medium">Programmer Manager</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-numeric-lg text-label-numeric-lg text-on-surface font-semibold">Rp 8.000.000,00</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                Di Atas Batas UMR (+117%)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700 font-semibold">6 Disetujui • 1 Menunggu</span></td><td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="viewDetail('GAJI-03')" title="Lihat Detail" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="editSalary('GAJI-03')" title="Edit Data Gaji" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">edit_square</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteSalary('GAJI-03')" title="Hapus Data" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: GAJI-04 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest" data-amount="8500000" data-grade="Grade 4" data-id="GAJI-04" data-notes="Standar staf Marketing Specialist, eksekusi pemasaran digital dan kemitraan." data-role="Marketing Specialist">
+<td class="py-3.5 px-space-md font-label-numeric-md text-label-numeric-md font-semibold text-primary">GAJI-04</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface font-medium">Marketing Specialist</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-numeric-lg text-label-numeric-lg text-on-surface font-semibold">
+              Rp 3.500.000,00
+            </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                Di Atas Batas UMR (+67%)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700 font-semibold">6 Disetujui • 1 Menunggu</span></td><td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="viewDetail('GAJI-04')" title="Lihat Detail" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="editSalary('GAJI-04')" title="Edit Data Gaji" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">edit_square</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteSalary('GAJI-04')" title="Hapus Data" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: GAJI-05 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-amount="4900000" data-grade="Grade 5" data-id="GAJI-05" data-notes="Standar staf SPG penjualan ritel dan operasional lini depan toko." data-role="SPG">
+<td class="py-3.5 px-space-md font-label-numeric-md text-label-numeric-md font-semibold text-primary">GAJI-05</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface font-medium">SPG</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-numeric-lg text-label-numeric-lg text-on-surface font-semibold">
+              Rp 2.500.000,00
+            </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-caps text-label-caps uppercase bg-amber-50 text-amber-800">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                Khusus Cabang Non-DKI (Sesuai UMK Regional)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center"><button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-caps text-label-caps uppercase bg-amber-50 text-amber-800 hover:bg-amber-100 transition-colors font-semibold shadow-sm" onclick="alert('Notifikasi persetujuan skema GAJI-05 telah dikirim ke Owner.')" type="button"><span class="material-symbols-outlined text-[1rem] text-amber-600">pending</span>Menunggu Approval</button></td><td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="viewDetail('GAJI-05')" title="Lihat Detail" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="editSalary('GAJI-05')" title="Edit Data Gaji" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">edit_square</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteSalary('GAJI-05')" title="Hapus Data" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">delete</span>
+</button>
+</div>
+</td>
+</tr><tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest" data-amount="5000000" data-grade="Grade 3" data-id="GAJI-06" data-notes="Standar Programmer Staff, implementasi sistem dan pemeliharaan aplikasi." data-role="Programmer Staff"><td class="py-3.5 px-space-md font-label-numeric-md text-label-numeric-md font-semibold text-primary">GAJI-06</td><td class="py-3.5 px-space-md"><div class="flex items-center gap-2"><span class="font-body-md text-body-md text-on-surface font-medium">Programmer Staff</span></div></td><td class="py-3.5 px-space-md text-right font-label-numeric-lg text-label-numeric-lg text-on-surface font-semibold">Rp 5.000.000,00</td><td class="py-3.5 px-space-md"><span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>Di Atas Batas UMR (+108%)</span></td><td class="py-3.5 px-space-md text-center"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700 font-semibold">6 Disetujui • 1 Menunggu</span></td><td class="py-3.5 px-space-md text-center"><div class="flex items-center justify-center gap-1"><button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="viewDetail('GAJI-06')" title="Lihat Detail" type="button"><span class="material-symbols-outlined text-[1.125rem]">visibility</span></button><button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="editSalary('GAJI-06')" title="Edit Data Gaji" type="button"><span class="material-symbols-outlined text-[1.125rem]">edit_square</span></button><button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteSalary('GAJI-06')" title="Hapus Data" type="button"><span class="material-symbols-outlined text-[1.125rem]">delete</span></button></div></td></tr><tr class="hover:bg-surface-container-low/60 transition-colors" data-amount="4200000" data-grade="Grade 4" data-id="GAJI-07" data-notes="Standar Marketing Staff, eksekusi kampanye operasional dan promosi produk." data-role="Marketing Staff"><td class="py-3.5 px-space-md font-label-numeric-md text-label-numeric-md font-semibold text-primary">GAJI-07</td><td class="py-3.5 px-space-md"><div class="flex items-center gap-2"><span class="font-body-md text-body-md text-on-surface font-medium">Marketing Staff</span></div></td><td class="py-3.5 px-space-md text-right font-label-numeric-lg text-label-numeric-lg text-on-surface font-semibold">Rp 4.200.000,00</td><td class="py-3.5 px-space-md"><span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>Di Atas Batas UMR (+75%)</span></td><td class="py-3.5 px-space-md text-center"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700 font-semibold">6 Disetujui • 1 Menunggu</span></td><td class="py-3.5 px-space-md text-center"><div class="flex items-center justify-center gap-1"><button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="viewDetail('GAJI-07')" title="Lihat Detail" type="button"><span class="material-symbols-outlined text-[1.125rem]">visibility</span></button><button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="editSalary('GAJI-07')" title="Edit Data Gaji" type="button"><span class="material-symbols-outlined text-[1.125rem]">edit_square</span></button><button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteSalary('GAJI-07')" title="Hapus Data" type="button"><span class="material-symbols-outlined text-[1.125rem]">delete</span></button></div></td></tr><tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest" data-amount="4500000" data-grade="Grade 4" data-id="GAJI-08" data-notes="Standar HR Staff, administrasi penggajian, absensi, dan kepersonaliaan. Tunjangan Makan: Rp 700.000, Lembur/Jam: Rp 35.000." data-role="HR Staff"><td class="py-3.5 px-space-md font-label-numeric-md text-label-numeric-md font-semibold text-primary">GAJI-08</td><td class="py-3.5 px-space-md"><div class="flex items-center gap-2"><span class="font-body-md text-body-md text-on-surface font-medium">HR Staff</span></div></td><td class="py-3.5 px-space-md text-right font-label-numeric-lg text-label-numeric-lg text-on-surface font-semibold">Rp 4.500.000,00</td><td class="py-3.5 px-space-md"><div class="flex flex-col gap-1"><span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700 w-fit"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>Di Atas Batas UMR (+88%)</span></div></td><td class="py-3.5 px-space-md text-center"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700 font-semibold"><span class="material-symbols-outlined text-[1rem] text-emerald-600">check_circle</span>Disetujui Owner</span></td><td class="py-3.5 px-space-md text-center"><div class="flex items-center justify-center gap-1"><button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="viewDetail('GAJI-08')" title="Lihat Detail" type="button"><span class="material-symbols-outlined text-[1.125rem]">visibility</span></button><button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors" onclick="editSalary('GAJI-08')" title="Edit Data Gaji" type="button"><span class="material-symbols-outlined text-[1.125rem]">edit_square</span></button><button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors" onclick="deleteSalary('GAJI-08')" title="Hapus Data" type="button"><span class="material-symbols-outlined text-[1.125rem]">delete</span></button></div></td></tr></tbody>
+</table>
+</div>
+<!-- Table Footer / Compliance Metadata -->
+<div class="p-space-md bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[1.125rem]">verified_user</span>
+<span>Semua skema gaji telah divalidasi audit kompensasi Q4 2026. Basis perhitungan 173 jam kerja reguler.</span>
+</div>
+<div class="flex items-center gap-2"><span class="font-body-sm text-body-sm text-on-surface-variant">Total <span class="font-semibold text-on-surface">8 Posisi Jabatan</span></span><span class="text-outline-variant">•</span><span class="font-body-sm text-body-sm text-on-surface-variant">Skema: <span class="font-semibold text-on-surface">Gaji Pokok Standar Terverifikasi</span></span></div>
+</div>
+</div>
+<!-- CRUD MODAL: Tambah / Edit Skema Gaji -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-on-surface/50 backdrop-blur-sm hidden" id="salaryModal" role="dialog">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-lg overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-caps text-label-caps uppercase text-secondary tracking-wider" id="modalSubTitle">Master Data Payroll</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold" id="modalTitle">Tambah Skema Gaji Baru</h2>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" onclick="closeSalaryModal()" type="button">
+<span class="material-symbols-outlined text-[1.25rem]">close</span>
+</button>
+</div>
+<!-- Modal Form Body -->
+<form class="p-space-lg space-y-space-md" id="salaryForm" onsubmit="handleFormSubmit(event)">
+<!-- Input ID Gaji (GAJI-XX) -->
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="formSalaryId">ID Gaji Pokok (Wajib)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2 text-outline text-[1.125rem]">pin</span>
+<input class="w-full pl-9 pr-space-md py-2 bg-surface rounded-lg font-label-numeric-md text-label-numeric-md text-on-surface uppercase outline-none border-0 focus:ring-2 focus:ring-secondary transition-all" id="formSalaryId" placeholder="Contoh: GAJI-07" required="" type="text">
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Gunakan kode unik berformat GAJI-XX untuk pencatatan buku besar.</p>
+</div>
+<!-- Grade Selection -->
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="formGradeCategory">Tingkatan Grade &amp; Kategori</label>
+<select class="w-full px-space-md py-2 bg-surface rounded-lg font-body-md text-body-md text-on-surface outline-none border-0 focus:ring-2 focus:ring-secondary transition-all cursor-pointer" id="formGradeCategory" required=""><option value="Grade 1 (General Manager)">Grade 1 - General Manager</option>
+<option value="Grade 2 (HR Manager)">Grade 2 - HR Manager</option>
+<option value="Grade 3 (Programmer)">Grade 3 - Programmer</option>
+<option selected="" value="Grade 4 (Marketing Specialist)">Grade 4 - Marketing Specialist</option>
+<option value="Grade 5 (SPG)">Grade 5 - SPG</option><option value="Grade 4 (HR Staff)">Grade 4 - HR Staff</option></select>
+</div>
+<!-- Input Nilai Nominal Gaji Pokok (Rp) -->
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="formSalaryAmount">Jumlah Gaji Pokok (Rp) (Wajib)</label>
+<div class="flex items-center rounded-lg overflow-hidden bg-surface">
+<span class="px-space-md py-2 bg-surface-container-high font-label-numeric-md text-label-numeric-md font-semibold text-on-surface">Rp</span>
+<input class="w-full px-space-md py-2 bg-transparent font-label-numeric-lg text-label-numeric-lg text-on-surface font-semibold outline-none border-0 focus:ring-2 focus:ring-secondary transition-all" id="formSalaryAmount" min="1000000" placeholder="8500000" required="" step="50000" type="number">
+</div>
+<div class="flex justify-between items-center mt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Batas Minimum UMR: Rp 5.067.381</span>
+<span class="font-label-caps text-label-caps text-emerald-600 font-bold uppercase" id="umrCheckFeedback">Memenuhi Regulasi</span>
+</div>
+</div>
+<!-- Catatan Deskripsi Grade -->
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="formSalaryNotes">Catatan Deskripsi Grade &amp; Skema</label>
+<textarea class="w-full p-space-md bg-surface rounded-lg font-body-md text-body-md text-on-surface outline-none border-0 focus:ring-2 focus:ring-secondary transition-all resize-none" id="formSalaryNotes" placeholder="Kualifikasi minimum, cakupan tanggung jawab, dan aturan plafon insentif..." rows="3"></textarea>
+</div>
+<!-- Modal Action Footer -->
+<div class="pt-space-md flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-body-md text-body-md font-medium hover:bg-surface-container-high transition-colors" onclick="closeSalaryModal()" type="button">
+            Batal
+          </button>
+<button class="px-space-lg py-2 rounded-lg bg-secondary text-on-secondary font-body-md text-body-md font-medium shadow-sm hover:bg-secondary-container transition-colors flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[1.125rem]">save</span>
+<span>Simpan Perubahan</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- DETAIL DRAWER / MODAL: Lihat Detail Gaji -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-on-surface/50 backdrop-blur-sm hidden" id="detailModal" role="dialog">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<div class="p-space-lg bg-primary text-on-primary flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-wider">Spesifikasi Skema Master</span>
+<h2 class="font-headline-sm text-headline-sm font-semibold" id="detailSalaryId">GAJI-01</h2>
+</div>
+<button class="p-1 rounded-lg text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors" onclick="closeDetailModal()" type="button">
+<span class="material-symbols-outlined text-[1.25rem]">close</span>
+</button>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Tingkatan &amp; Kategori</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-0.5" id="detailGradeCategory">Grade 1 - Eksekutif</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Gaji Pokok Terstandarisasi</span>
+<div class="font-label-numeric-lg text-label-numeric-lg text-secondary font-bold mt-1" id="detailSalaryAmount">Rp 22.000.000,00</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Per bulan (Komponen A1 SPT Tahunan 1721-A1)</div>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Catatan Deskripsi &amp; Otorisasi</span>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-relaxed" id="detailNotes">Standar gaji pokok dewan direksi, tidak terikat plafon lembur.</p>
+</div>
+<div class="pt-2 flex justify-end">
+<button class="px-space-md py-2 rounded-lg bg-secondary text-on-secondary font-body-md text-body-md font-medium" onclick="closeDetailModal()" type="button">
+            Tutup
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-Interactions & Form Logic Script -->
+<script>
+    let currentEditRow = null;
+
+    function openSalaryModal(mode, rowElement = null) {
+      const modal = document.getElementById('salaryModal');
+      const modalTitle = document.getElementById('modalTitle');
+      const form = document.getElementById('salaryForm');
+
+      if (mode === 'create') {
+        modalTitle.textContent = '+ Tambah Skema Gaji Baru';
+        form.reset();
+        document.getElementById('formSalaryId').removeAttribute('readonly');
+        currentEditRow = null;
+      } else if (mode === 'edit' && rowElement) {
+        modalTitle.textContent = 'Edit Data Gaji Pokok';
+        currentEditRow = rowElement;
+
+        document.getElementById('formSalaryId').value = rowElement.dataset.id;
+        document.getElementById('formSalaryId').setAttribute('readonly', 'true');
+        document.getElementById('formSalaryAmount').value = rowElement.dataset.amount;
+        document.getElementById('formSalaryNotes').value = rowElement.dataset.notes || '';
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeSalaryModal() {
+      document.getElementById('salaryModal').classList.add('hidden');
+    }
+
+    function viewDetail(salaryId) {
+      const row = document.querySelector(`tr[data-id="${salaryId}"]`);
+      if (!row) return;
+
+      document.getElementById('detailSalaryId').textContent = salaryId;
+      document.getElementById('detailGradeCategory').textContent = `${row.dataset.grade} - ${row.dataset.role}`;
+      
+      const num = parseInt(row.dataset.amount, 10);
+      document.getElementById('detailSalaryAmount').textContent = 'Rp ' + num.toLocaleString('id-ID') + ',00';
+      document.getElementById('detailNotes').textContent = row.dataset.notes;
+
+      document.getElementById('detailModal').classList.remove('hidden');
+    }
+
+    function closeDetailModal() {
+      document.getElementById('detailModal').classList.add('hidden');
+    }
+
+    function editSalary(salaryId) {
+      const row = document.querySelector(`tr[data-id="${salaryId}"]`);
+      if (row) {
+        openSalaryModal('edit', row);
+      }
+    }
+
+    function deleteSalary(salaryId) {
+      if (confirm(`Apakah Anda yakin ingin menghapus data skema ${salaryId}? Tindakan ini memerlukan otorisasi administrator.`)) {
+        const row = document.querySelector(`tr[data-id="${salaryId}"]`);
+        if (row) {
+          row.remove();
+        }
+      }
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const id = document.getElementById('formSalaryId').value;
+      const amount = parseInt(document.getElementById('formSalaryAmount').value, 10);
+      const notes = document.getElementById('formSalaryNotes').value;
+      const gradeText = document.getElementById('formGradeCategory').value;
+
+      if (currentEditRow) {
+        currentEditRow.dataset.amount = amount;
+        currentEditRow.dataset.notes = notes;
+        const amountCell = currentEditRow.querySelector('td:nth-child(3)');
+        if (amountCell) {
+          amountCell.textContent = 'Rp ' + amount.toLocaleString('id-ID') + ',00';
+        }
+      } else {
+        const tableBody = document.getElementById('salaryTableBody');
+        const newRow = document.createElement('tr');
+        newRow.className = 'hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest';
+        newRow.dataset.id = id;
+        newRow.dataset.grade = gradeText.split(' ')[0] + ' ' + gradeText.split(' ')[1];
+        newRow.dataset.role = gradeText;
+        newRow.dataset.amount = amount;
+        newRow.dataset.notes = notes;
+
+        newRow.innerHTML = `
+          <td class="py-3.5 px-space-md font-label-numeric-md text-label-numeric-md font-semibold text-primary">${id}</td>
+          <td class="py-3.5 px-space-md">
+            <div class="flex items-center gap-2">
+              <span class="font-body-md text-body-md text-on-surface font-medium">${gradeText}</span>
+            </div>
+          </td>
+          <td class="py-3.5 px-space-md text-right font-label-numeric-lg text-label-numeric-lg text-on-surface font-semibold">
+            Rp ${amount.toLocaleString('id-ID')},00
+          </td>
+          <td class="py-3.5 px-space-md">
+            <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+              Sesuai Regulasi Standard
+            </span>
+          </td>
+          <td class="py-3.5 px-space-md text-center">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-caps text-label-caps uppercase bg-emerald-50 text-emerald-700 font-semibold">6 Disetujui • 1 Menunggu</span>
+          </td>
+          <td class="py-3.5 px-space-md text-center">
+            <div class="flex items-center justify-center gap-1">
+              <button type="button" onclick="viewDetail('${id}')" title="Lihat Detail" class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors">
+                <span class="material-symbols-outlined text-[1.125rem]">visibility</span>
+              </button>
+              <button type="button" onclick="editSalary('${id}')" title="Edit Data Gaji" class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-secondary transition-colors">
+                <span class="material-symbols-outlined text-[1.125rem]">edit_square</span>
+              </button>
+              <button type="button" onclick="deleteSalary('${id}')" title="Hapus Data" class="p-1.5 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-error transition-colors">
+                <span class="material-symbols-outlined text-[1.125rem]">delete</span>
+              </button>
+            </div>
+          </td>
+        `;
+        tableBody.appendChild(newRow);
+      }
+
+      closeSalaryModal();
+    }
+
+    function filterGrades(selectedGrade) {
+      const rows = document.querySelectorAll('#salaryTableBody tr');
+      rows.forEach(row => {
+        if (selectedGrade === 'ALL' || row.dataset.grade === selectedGrade) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    document.getElementById('formSalaryAmount').addEventListener('input', function(e) {
+      const val = parseInt(e.target.value, 10);
+      const label = document.getElementById('umrCheckFeedback');
+      if (val < 5067381) {
+        label.textContent = 'Di Bawah UMR DKI (Khusus Cabang Non-DKI)';
+        label.className = 'font-label-caps text-label-caps text-amber-700 font-bold uppercase';
+      } else {
+        label.textContent = 'Memenuhi Regulasi Batas Minimum';
+        label.className = 'font-label-caps text-label-caps text-emerald-600 font-bold uppercase';
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-space-md"><div class="w-full px-space-margin flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant"><div>© 2026 PT Java Batik Megah Nusantara. Hak Cipta Dilindungi.</div><div class="flex items-center gap-space-md"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> Server Online</span><span>•</span><span>Enterprise V2.4</span><span>•</span><span class="font-label-numeric-sm text-label-numeric-sm">FY 2026</span></div></div></footer></div>
+
+
+
+</body></html>

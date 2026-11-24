@@ -1,0 +1,374 @@
+<!DOCTYPE html><html class="h-full bg-slate-50" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Enterprise Portal Integrated System - Java Batik</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config Customization -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              red: '#D9232D',
+              dark: '#1e293b',
+              blue: '#1E40AF',
+              accent: '#3B82F6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="custom-background">
+    /* Subtle geometric/batik inspired pattern overlay with modern gradient */
+    .enterprise-bg-pattern {
+      background-color: #f8fafc;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(30, 64, 175, 0.08) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(217, 35, 45, 0.05) 0px, transparent 50%),
+        radial-gradient(#cbd5e1 0.75px, transparent 0.75px);
+      background-size: 100% 100%, 100% 100%, 24px 24px;
+    }
+  </style>
+<style data-purpose="role-indicator-animations">
+    .role-badge-transition {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="h-full font-sans text-slate-800 antialiased enterprise-bg-pattern flex flex-col justify-between selection:bg-blue-600 selection:text-white">
+<!-- BEGIN: Top Navigation Bar -->
+<header class="w-full bg-white/80 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-30">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+<!-- Brand Logo & Identity -->
+<div class="flex items-center space-x-3.5">
+<img alt="Java Batik Logo" class="h-10 w-auto object-contain rounded-md shadow-sm border border-slate-100 p-0.5 bg-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8k_BTWvW9izX3Mt_r1IT9MUg45Em8Dxr-CoJGKZj5ehXAEpgaUTmmTq-DXXZgMR_3gAH45-KMjpyxu3mrIfLzRWpLHkiIsLyLwwIaAbkgVBQeef9lqqCUIGDmeW96oen-ZoV1ftJ7G_F71enofgMC7OvQsN7sBX2cEGs3m2G_MrotwWTsxh6CwJDO3scaYJZfa5Ao9fROUOF6C_P1k0ED5FnUPc6FodO4-LXrO-hYzVRrjac5v051Yg">
+<div class="border-l border-slate-300 pl-3.5">
+<div class="text-sm font-bold tracking-tight text-slate-900 leading-none">JAVA BATIK</div>
+<div class="text-xs text-slate-500 font-medium tracking-wide">Enterprise Integrated System</div>
+</div>
+</div>
+<!-- System Status & Security Badges -->
+<div class="flex items-center space-x-4">
+<div class="hidden sm:flex items-center text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2"></span>
+          Server Terpadu Aktif 2026
+        </div>
+<div class="text-xs text-slate-600 font-medium flex items-center gap-1.5 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
+<svg class="w-3.5 h-3.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" fill-rule="evenodd"></path>
+</svg>
+          TLS 1.3 256-Bit Encrypted
+        </div>
+</div>
+</div>
+</header>
+<!-- END: Top Navigation Bar -->
+<!-- BEGIN: Main Content Container -->
+<main class="flex-grow flex items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
+<div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- BEGIN: Left Information Panel (Ecosystem & Overview) -->
+<section class="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-center space-y-6" data-purpose="ecosystem-overview">
+<!-- Headline & Context -->
+<div>
+<span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold uppercase tracking-wider bg-blue-100 text-blue-800 border border-blue-200">
+            Portal Multi-Modul Terpadu
+          </span>
+<h1 class="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Sistem Informasi Terpadu &amp; Tata Kelola Keuangan
+          </h1>
+<p class="mt-3 text-slate-600 leading-relaxed text-sm">
+            Platform terpadu untuk efisiensi penggajian karyawan, kontrol pengeluaran operasional perusahaan, serta monitoring kepatuhan finansial dalam satu gerbang autentikasi aman.
+          </p>
+</div>
+<!-- Ecosystem Modular Cards -->
+<div class="space-y-3.5 pt-1">
+<!-- Expenditure System Info Card -->
+<div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm flex items-start space-x-3.5 hover:border-blue-400 transition-colors">
+<div class="p-2.5 rounded-lg bg-indigo-50 text-indigo-600 border border-indigo-100">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-sm font-bold text-slate-900">Modul Expenditure (Pengeluaran)</h3>
+<span class="text-[10px] font-bold uppercase tracking-wider bg-indigo-100 text-indigo-700 px-1.5 py-0.5 rounded">Admin</span>
+</div>
+<p class="text-xs text-slate-500 mt-0.5">Form kas operasional, utang usaha, jurnal umum, buku besar, hingga neraca saldo perusahaan.</p>
+</div>
+</div>
+<!-- Payroll System Info Card -->
+<div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm flex items-start space-x-3.5 hover:border-blue-400 transition-colors">
+<div class="p-2.5 rounded-lg bg-emerald-50 text-emerald-600 border border-emerald-100">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-sm font-bold text-slate-900">Modul Payroll (Penggajian)</h3>
+<span class="text-[10px] font-bold uppercase tracking-wider bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded">HR Manager</span>
+</div>
+<p class="text-xs text-slate-500 mt-0.5">Pengelolaan master karyawan, rekap presensi, lembur, insentif, pemotongan PPh 21, dan slip gaji.</p>
+</div>
+</div>
+<!-- Owner Dashboard Info Card -->
+<div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm flex items-start space-x-3.5 hover:border-blue-400 transition-colors">
+<div class="p-2.5 rounded-lg bg-amber-50 text-amber-600 border border-amber-100">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-sm font-bold text-slate-900">Portal Eksekutif &amp; Approval Owner</h3>
+<span class="text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded">Komisaris / Owner</span>
+</div>
+<p class="text-xs text-slate-500 mt-0.5">Otorisasi final payroll bulanan, verifikasi pengeluaran strategis, dan ringkasan audit real-time.</p>
+</div>
+</div>
+</div>
+<!-- Compliance note -->
+<div class="text-xs text-slate-500 flex items-center space-x-2 pt-1">
+<svg class="w-4 h-4 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path>
+</svg>
+<span>Standar Regulasi Kepatuhan Pajak &amp; Audit Finansial Perusahaan 2026</span>
+</div>
+</section>
+<!-- END: Left Information Panel -->
+<!-- BEGIN: Right Login Card & Multi-Role Dispatcher -->
+<section class="lg:col-span-7 order-1 lg:order-2" data-purpose="login-form-wrapper">
+<div class="bg-white rounded-2xl shadow-xl border border-slate-200/90 overflow-hidden relative">
+<!-- Top subtle accent bar based on active role -->
+<div class="h-1.5 w-full bg-gradient-to-r from-indigo-600 to-blue-700 transition-all duration-300" id="roleAccentBar"></div>
+<div class="p-6 sm:p-9 space-y-6"><div class="flex items-center justify-between pb-2 border-b border-slate-100"><div class="flex items-center space-x-3"><img alt="Java Batik" class="w-10 h-10 object-contain rounded-lg p-0.5 border border-slate-200 bg-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8k_BTWvW9izX3Mt_r1IT9MUg45Em8Dxr-CoJGKZj5ehXAEpgaUTmmTq-DXXZgMR_3gAH45-KMjpyxu3mrIfLzRWpLHkiIsLyLwwIaAbkgVBQeef9lqqCUIGDmeW96oen-ZoV1ftJ7G_F71enofgMC7OvQsN7sBX2cEGs3m2G_MrotwWTsxh6CwJDO3scaYJZfa5Ao9fROUOF6C_P1k0ED5FnUPc6FodO4-LXrO-hYzVRrjac5v051Yg"><div><h2 class="text-2xl font-bold text-slate-900 tracking-tight">Login</h2></div></div><span class="px-2.5 py-1 text-[11px] font-semibold text-emerald-700 bg-emerald-50 rounded-full border border-emerald-200 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>Online</span></div><form class="space-y-4 pt-1" data-purpose="authentication-form" id="portalLoginForm" onsubmit="handleLoginSubmit(event)"><div><label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5" for="usernameInput">Username</label><div class="relative rounded-lg shadow-2xs"><div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div><input autocomplete="username" class="block w-full pl-10 pr-4 py-3 sm:text-sm border border-slate-300 rounded-lg text-slate-900 font-medium focus:ring-2 focus:ring-blue-600 focus:border-blue-600 placeholder-slate-400" id="usernameInput" name="username" oninput="handleUsernameInput(this.value)" placeholder="Ketik username (admin / hrmanager / owner)..." required="" type="text" value="admin"></div></div><div><button class="w-full flex items-center justify-center py-3.5 px-4 border border-transparent rounded-xl shadow-md text-base font-bold text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200 cursor-pointer" id="submitAuthBtn" type="submit"><span class="hidden mr-2" id="btnSpinner"><svg class="animate-spin h-4 w-4 text-white" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" d="M4 12a8 8 0 018-8v8H4z" fill="currentColor"></path></svg></span><span class="mr-2" id="btnIcon"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span><span id="btnText">Login</span></button></div></form><div class="hidden p-3.5 rounded-xl bg-slate-900 text-white shadow-xl flex items-start space-x-3 transition-opacity" id="simulationToast"><div class="p-1 rounded-full bg-emerald-500 text-slate-950 mt-0.5 shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></div><div class="text-xs"><p class="font-bold text-sm text-emerald-400" id="toastTitle">Login Berhasil!</p><p class="text-slate-300 mt-0.5" id="toastMessage">Mengarahkan ke dashboard...</p></div></div></div>
+<!-- Bottom Security Footer Bar -->
+<div class="px-6 py-3 bg-slate-50 border-t border-slate-200/80 flex items-center justify-between text-[11px] text-slate-500">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-blue-500"></span>
+              Single Sign-On (SSO) Terpusat
+            </span>
+<span>IP: 192.168.10.24 (Jaringan Kantor Pusat)</span>
+</div>
+</div>
+</section>
+<!-- END: Right Login Card -->
+</div>
+</main>
+<!-- END: Main Content Container -->
+<!-- BEGIN: Site Footer -->
+<footer class="w-full border-t border-slate-200/90 bg-white py-4 text-center text-xs text-slate-500">
+<div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+<div>
+        © 2026 <strong>Java Batik Integrated Enterprise System</strong>. Hak Cipta Dilindungi Undang-Undang.
+      </div>
+<div class="flex items-center space-x-4 text-slate-400">
+<a class="hover:text-slate-600 transition-colors" href="#">Bantuan IT Support</a>
+<span>•</span>
+<a class="hover:text-slate-600 transition-colors" href="#">Kebijakan Privasi Karyawan</a>
+<span>•</span>
+<span class="text-slate-500 font-medium">Build v2.6.4</span>
+</div>
+</div>
+</footer>
+<!-- END: Site Footer -->
+<!-- BEGIN: Logic & Interaction Scripts -->
+<script data-purpose="role-routing-logic">
+    // Definition of multi-role configurations
+    const roleDefinitions = {
+      admin: {
+        name: 'Sistem Expenditure (Pengeluaran & Pembukuan)',
+        shortRole: 'Admin Expenditure',
+        destination: '/expenditure/dashboard',
+        accessLevel: 'Hak Akses: Pengeluaran & Akuntansi',
+        modules: 'Kas • Jurnal • Buku Besar • Neraca Saldo',
+        btnText: 'Masuk ke Sistem Expenditure',
+        accentColorClass: 'from-indigo-600 to-blue-700',
+        badgeBg: 'bg-indigo-50 border-indigo-200 text-indigo-900',
+        dotColor: 'bg-indigo-600',
+        btnColorClass: 'bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500'
+      },
+      hrmanager: {
+        name: 'Sistem Payroll & SDM Karyawan',
+        shortRole: 'HR Manager Payroll',
+        destination: '/payroll/dashboard-hr',
+        accessLevel: 'Hak Akses: Data SDM, Presensi & THP',
+        modules: 'Master Pegawai • Rekap Absensi • PPh 21 • Slip Gaji',
+        btnText: 'Masuk ke Sistem Payroll',
+        accentColorClass: 'from-emerald-600 to-teal-700',
+        badgeBg: 'bg-emerald-50 border-emerald-200 text-emerald-900',
+        dotColor: 'bg-emerald-600',
+        btnColorClass: 'bg-emerald-600 hover:bg-emerald-700 focus:ring-emerald-500'
+      },
+      owner: {
+        name: 'Dashboard Eksekutif & Persetujuan Owner',
+        shortRole: 'Owner / Komisaris',
+        destination: '/executive/owner-approval-center',
+        accessLevel: 'Hak Akses: Otorisasi & Audit Tertinggi',
+        modules: 'Approval Payroll • Audit Finansial • Cashflow Monitor',
+        btnText: 'Masuk ke Portal Approval Owner',
+        accentColorClass: 'from-amber-600 to-rose-700',
+        badgeBg: 'bg-amber-50 border-amber-200 text-amber-900',
+        dotColor: 'bg-amber-600',
+        btnColorClass: 'bg-amber-600 hover:bg-amber-700 focus:ring-amber-500'
+      },
+      default: {
+        name: 'Portal Internal Terpadu',
+        shortRole: 'Pengguna Umum',
+        destination: '/portal/dashboard',
+        accessLevel: 'Hak Akses: Terbatas',
+        modules: 'Profil Karyawan • Informasi Umum',
+        btnText: 'Masuk ke Sistem Terpadu',
+        accentColorClass: 'from-blue-600 to-indigo-600',
+        badgeBg: 'bg-blue-50 border-blue-200 text-blue-900',
+        dotColor: 'bg-blue-600',
+        btnColorClass: 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-500'
+      }
+    };
+
+    // Function to apply UI changes depending on recognized username
+    function updateRoleUI(roleKey) {
+      const config = roleDefinitions[roleKey] || roleDefinitions['default'];
+
+      // Elements to update
+      const previewCard = document.getElementById('rolePreviewCard');
+      const previewName = document.getElementById('rolePreviewName');
+      const accessLevel = document.getElementById('roleAccessLevel');
+      const destination = document.getElementById('rolePreviewDestination');
+      const modules = document.getElementById('roleModulesIncluded');
+      const dot = document.getElementById('roleIndicatorDot');
+      const btnText = document.getElementById('btnText');
+      const submitBtn = document.getElementById('submitAuthBtn');
+      const accentBar = document.getElementById('roleAccentBar');
+
+      // Update text values
+      previewName.textContent = config.name;
+      accessLevel.textContent = config.accessLevel;
+      destination.textContent = config.destination;
+      modules.textContent = config.modules;
+      btnText.textContent = config.btnText;
+
+      // Update styles and colors
+      accentBar.className = `h-1.5 w-full bg-gradient-to-r ${config.accentColorClass} transition-all duration-300`;
+      dot.className = `w-2.5 h-2.5 rounded-full ${config.dotColor}`;
+      
+      // Reset card styling and reapply appropriate role tone
+      previewCard.className = `p-3.5 rounded-xl border transition-all duration-300 ${config.badgeBg}`;
+
+      // Reset and set button classes
+      submitBtn.className = `w-full flex items-center justify-center py-3 px-4 border border-transparent rounded-xl shadow-md text-sm font-bold text-white transition-all duration-200 ${config.btnColorClass}`;
+
+      // Update pills active states
+      updatePillsActiveState(roleKey);
+    }
+
+    // Highlighting active shortcut pill
+    function updatePillsActiveState(activeKey) {
+      const pills = ['admin', 'hrmanager', 'owner'];
+      pills.forEach(key => {
+        const pillElem = document.getElementById('pill' + key.charAt(0).toUpperCase() + key.slice(1));
+        if (!pillElem) return;
+
+        if (key === activeKey) {
+          pillElem.classList.add('ring-2', 'ring-blue-500', 'bg-blue-50/50');
+        } else {
+          pillElem.classList.remove('ring-2', 'ring-blue-500', 'bg-blue-50/50');
+        }
+      });
+    }
+
+    // Handler when user types username
+    function handleUsernameInput(val) {
+      const cleanVal = val.trim().toLowerCase();
+      if (cleanVal === 'admin' || cleanVal === 'hrmanager' || cleanVal === 'owner') {
+        updateRoleUI(cleanVal);
+      } else {
+        updateRoleUI('default');
+      }
+    }
+
+    // Handler when user clicks on quick demo pills
+    function selectRole(roleKey) {
+      const usernameInput = document.getElementById('usernameInput');
+      usernameInput.value = roleKey;
+      updateRoleUI(roleKey);
+      usernameInput.focus();
+    }
+  </script>
+<script data-purpose="form-and-password-interaction">
+    // Password visibility toggle logic
+    let passwordVisible = false;
+    function togglePasswordVisibility() {
+      const passwordInput = document.getElementById('passwordInput');
+      const eyeOpen = document.getElementById('eyeIconOpen');
+      const eyeClosed = document.getElementById('eyeIconClosed');
+
+      passwordVisible = !passwordVisible;
+      if (passwordVisible) {
+        passwordInput.type = 'text';
+        eyeOpen.classList.add('hidden');
+        eyeClosed.classList.remove('hidden');
+      } else {
+        passwordInput.type = 'password';
+        eyeOpen.classList.remove('hidden');
+        eyeClosed.classList.add('hidden');
+      }
+    }
+
+    // Submit action handler with mock redirection notification
+    function handleLoginSubmit(event) {
+      event.preventDefault();
+      
+      const username = document.getElementById('usernameInput').value.trim().toLowerCase();
+      const branch = document.getElementById('branchSelect').selectedOptions[0].text;
+      const btn = document.getElementById('submitAuthBtn');
+      const btnSpinner = document.getElementById('btnSpinner');
+      const btnIcon = document.getElementById('btnIcon');
+      const toast = document.getElementById('simulationToast');
+      const toastTitle = document.getElementById('toastTitle');
+      const toastMsg = document.getElementById('toastMessage');
+
+      const config = roleDefinitions[username] || roleDefinitions['default'];
+
+      // Disable button during simulated dispatch
+      btn.disabled = true;
+      btnSpinner.classList.remove('hidden');
+      btnIcon.classList.add('hidden');
+
+      setTimeout(() => {
+        btnSpinner.classList.add('hidden');
+        btnIcon.classList.remove('hidden');
+        btn.disabled = false;
+
+        // Show feedback toast
+        toastTitle.textContent = `Akses Diberikan: ${config.shortRole || 'Pengguna Terverifikasi'}`;
+        toastMsg.innerHTML = `Otentikasi sukses untuk <strong>${branch}</strong>. Menghubungkan ke <code>${config.destination}</code>...`;
+        toast.classList.remove('hidden');
+
+        // Scroll to toast if on smaller screens
+        toast.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 700);
+    }
+
+    // Initialize initial state on load
+    document.addEventListener('DOMContentLoaded', () => {
+      updateRoleUI('admin');
+    });
+  </script>
+<!-- END: Logic & Interaction Scripts -->
+
+
+</body></html>
